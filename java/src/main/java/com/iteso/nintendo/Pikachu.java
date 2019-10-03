@@ -48,37 +48,29 @@ public class Pikachu extends PokemonCharacter {
         damage = (int) (attack * getDefenseMultiplier());
         int newHP = getHitPoints() - damage;
 
-        String defendMessage = new String("Defending attack, damage caused is "
-                + damage + " new HP is " + newHP);
+        String defendMessage = new String("Defending attack, damage caused is " + damage + " new HP is " + newHP);
 
         setHitPoints(newHP);
         return defendMessage;
-
     }
 
     @Override
     public final String secondAttack() {
 
-        String attackMessage = new String("Attacking opponent with "
-                + getSecondAttack()
-                + " causing a damage of " + getSecondAttackDamage());
+        String attackMessage = new String(
+                "Attacking opponent with " + getSecondAttack() + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;
-
-
     }
 
     @Override
     public final String mainAttack() {
-        String attackMessage = new String("Attacking opponent with "
-                + getMainAttack()
-                + " causing a damage of " + getMainAttackDamage());
+        String attackMessage = new String(
+                "Attacking opponent with " + getMainAttack() + " causing a damage of " + getMainAttackDamage());
         return attackMessage;
-
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+    public final void setNewAttack(final int attack, final int attackDamage, final String newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);
@@ -87,6 +79,5 @@ public class Pikachu extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
 
 }

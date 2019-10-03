@@ -3,30 +3,30 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Articuno extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Articuno constructor.
      */
-    public Pikachu() {
-        Thunderbolt thunderbolt = new Thunderbolt();
+    public Articuno() {
+        IceBeam iceBeam = new IceBeam();
         Earthquake earthquake = new Earthquake();
-        setType("electric");
-        setName("Pikachu");
+        setType("ice");
+        setName("Articuno");
         setHasEvolution(true);
-        setSecondAttack(thunderbolt.getAttackName());
+        setSecondAttack(iceBeam.getAttackName());
         setMainAttack(earthquake.getAttackName());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(thunderbolt.getAttackDamage());
+        setMainAttackDamage(iceBeam.getAttackDamage());
         setSecondAttackDamage(earthquake.getAttackDamage());
     }
 

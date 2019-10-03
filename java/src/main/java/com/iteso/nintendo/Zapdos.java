@@ -3,31 +3,31 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Zapdos extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Zapdos constructor.
      */
-    public Pikachu() {
+    public Zapdos() {
         Thunderbolt thunderbolt = new Thunderbolt();
-        Earthquake earthquake = new Earthquake();
-        setType("electric");
-        setName("Pikachu");
+        IceBeam iceBeam = new IceBeam();
+        setType("Electric");
+        setName("Zapdos");
         setHasEvolution(true);
         setSecondAttack(thunderbolt.getAttackName());
-        setMainAttack(earthquake.getAttackName());
+        setMainAttack(iceBeam.getAttackName());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(thunderbolt.getAttackDamage());
-        setSecondAttackDamage(earthquake.getAttackDamage());
+        setSecondAttackDamage(iceBeam.getAttackDamage());
     }
 
     @Override

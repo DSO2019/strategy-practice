@@ -8,5 +8,4 @@ public interface IAtaque
     String getNombre();
     void setDamage(int damage);
     int getDamage();
-
 }

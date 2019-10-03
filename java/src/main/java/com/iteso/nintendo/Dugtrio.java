@@ -1,7 +1,8 @@
 package com.iteso.nintendo;
 
-import com.iteso.nintendo.interfaces.*;
-import com.iteso.nintendo.attacks.*;
+import com.iteso.nintendo.interfaces.Attack;
+import com.iteso.nintendo.attacks.Earthquake;
+import com.iteso.nintendo.attacks.Dig;
 
 
 /**
@@ -46,7 +47,9 @@ public class Dugtrio extends PokemonCharacter {
         damage = (int) (attack * getDefenseMultiplier());
         int newHP = getHitPoints() - damage;
 
-        String defendMessage = new String("Defending attack, damage caused is " + damage + " new HP is " + newHP);
+        String defendMessage = new String(
+            "Defending attack, damage caused is " + damage
+            + " new HP is " + newHP);
 
         setHitPoints(newHP);
         return defendMessage;
@@ -56,19 +59,22 @@ public class Dugtrio extends PokemonCharacter {
     public final String secondAttack() {
 
         String attackMessage = new String(
-                "Attacking opponent with " + getSecondAttack() + " causing a damage of " + getSecondAttackDamage());
+                "Attacking opponent with " + getSecondAttack()
+                + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;
     }
 
     @Override
     public final String mainAttack() {
         String attackMessage = new String(
-                "Attacking opponent with " + getMainAttack() + " causing a damage of " + getMainAttackDamage());
+                "Attacking opponent with " + getMainAttack()
+                + " causing a damage of " + getMainAttackDamage());
         return attackMessage;
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage, final Attack newAttack) {
+    public final void setNewAttack(final int attack,
+    final int attackDamage, final Attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);

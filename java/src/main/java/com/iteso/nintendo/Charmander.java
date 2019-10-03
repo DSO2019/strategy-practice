@@ -6,7 +6,7 @@ import com.iteso.nintendo.attacks.Earthquake;
 
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by alex_rios on 10/03/2019.
  */
 public class Charmander extends PokemonCharacter {
     /**

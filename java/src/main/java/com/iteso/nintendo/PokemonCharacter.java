@@ -3,7 +3,7 @@ package com.iteso.nintendo;
 import com.iteso.nintendo.interfaces.Attack;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by alex_rios on 10/03/2019.
  */
 public abstract class PokemonCharacter {
 

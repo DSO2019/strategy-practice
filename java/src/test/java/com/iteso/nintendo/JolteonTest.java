@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by alex_rios on 10/03/2019.
  */
 public class JolteonTest {
     Jolteon jolteon;

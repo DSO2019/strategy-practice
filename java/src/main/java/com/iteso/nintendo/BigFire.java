@@ -1,7 +1,7 @@
 package com.iteso.nintendo;
 
 public class BigFire implements IAtaque{
-    public String nombre;
+    private String nombre;
     public int damage;
 
     @Override

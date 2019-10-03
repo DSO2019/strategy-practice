@@ -92,7 +92,7 @@ public abstract class PokemonCharacter implements IAtaque{
      * @param newAttack New attack name.
      */
     public abstract void setNewAttack(int attack,
-                                      int attackDamage, String newAttack);
+                                      int attackDamage, IAtaque newAttack);
 
     /**
      * Pokemon type.
@@ -130,7 +130,7 @@ public abstract class PokemonCharacter implements IAtaque{
      * Get name of main attack.
      * @return main attack name.
      */
-    public final IAtaque getMainAttack() {
+    public final String getMainAttack() {
         return mainAttack;
     }
 

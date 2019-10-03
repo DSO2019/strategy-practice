@@ -4,9 +4,9 @@ import net.sf.saxon.type.StringConverter;
 
 public interface IAtaque
 {
-    public void setNombre(String nombre);
-    public String getNombre();
-    public void setDamage(int damage);
-    public int getDamage();
+    void setNombre(String nombre);
+    String getNombre();
+    void setDamage(int damage);
+    int getDamage();
 
 }

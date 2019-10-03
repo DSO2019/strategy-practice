@@ -1,6 +1,6 @@
 package com.iteso.nintendo;
 
-public class Pichu extends PokemonCharacter {
+public abstract class Pichu extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -75,7 +75,7 @@ public class Pichu extends PokemonCharacter {
 
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final IAtaque newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);

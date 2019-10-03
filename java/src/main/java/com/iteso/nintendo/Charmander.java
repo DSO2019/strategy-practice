@@ -3,7 +3,7 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public abstract class Charmander extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -78,7 +78,7 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final IAtaque newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);

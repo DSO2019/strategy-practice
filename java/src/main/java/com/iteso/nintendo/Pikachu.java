@@ -3,7 +3,7 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public abstract class Pikachu extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -76,7 +76,6 @@ public class Pikachu extends PokemonCharacter {
 
     }
 
-    @Override
     public final void setNewAttack(final int attack, final int attackDamage,
                                    final IAtaque newAttack) {
         if (attack == 1) {

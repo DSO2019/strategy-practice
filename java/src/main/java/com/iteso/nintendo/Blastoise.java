@@ -2,35 +2,34 @@ package com.iteso.nintendo;
 
 import com.iteso.nintendo.PokemonCharacter;
 import com.iteso.nintendo.Slam;
-import com.iteso.nintendo.Impacthunder;
+import com.iteso.nintendo.Shower;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by AlfredoRodriguez on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Blastoise extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 90;
+    public static final int HIT_POINTS = 100;
     /**
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.4;
-
     /**
-     * Pikachu constructor.
+     * Blastoise constructor.
      */
-    public Pikachu() {
+    public Blastoise() {
         Slam slam = new Slam();
-        Impacthunder impacthunder = new Impacthunder();
-        setType("electric");
-        setName("Pikachu");
+        Shower shower = new Shower();
+        setType("water");
+        setName("Blastoise");
         setHasEvolution(true);
         setSecondAttack(slam.performAttack());
-        setMainAttack(impacthunder.performAttack());
+        setMainAttack(shower.performAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(impacthunder.attackPower());
+        setMainAttackDamage(shower.attackPower());
         setSecondAttackDamage(slam.attackPower());
     }
 

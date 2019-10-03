@@ -1,37 +1,35 @@
 package com.iteso.nintendo;
-
-import com.iteso.nintendo.PokemonCharacter;
-import com.iteso.nintendo.Slam;
-import com.iteso.nintendo.Impacthunder;
+import com.iteso.nintendo.Flamethrower;
+import com.iteso.nintendo.FireSpin;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by AlfredoRodriguez on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Charizard extends PokemonCharacter{
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 90;
+    public static final int HIT_POINTS = 100;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Charizard constructor.
      */
-    public Pikachu() {
-        Slam slam = new Slam();
-        Impacthunder impacthunder = new Impacthunder();
-        setType("electric");
-        setName("Pikachu");
+    public Charizard() {
+        FireSpin fireSpin = new FireSpin();
+        Flamethrower flamethrower = new Flamethrower();
+        setType("fire");
+        setName("Charizard");
         setHasEvolution(true);
-        setSecondAttack(slam.performAttack());
-        setMainAttack(impacthunder.performAttack());
+        setSecondAttack(fireSpin.performAttack());
+        setMainAttack(flamethrower.performAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(impacthunder.attackPower());
-        setSecondAttackDamage(slam.attackPower());
+        setMainAttackDamage(flamethrower.attackPower());
+        setSecondAttackDamage(fireSpin.attackPower());
     }
 
     @Override
@@ -56,7 +54,6 @@ public class Pikachu extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String("Attacking opponent with "
                 + getSecondAttack()
                 + " causing a damage of " + getSecondAttackDamage());

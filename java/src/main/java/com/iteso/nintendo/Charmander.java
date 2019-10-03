@@ -1,9 +1,11 @@
 package com.iteso.nintendo;
+import com.iteso.nintendo.Flamethrower;
+import com.iteso.nintendo.FireSpin;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Charmander extends PokemonCharacter{
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -13,27 +15,20 @@ public class Charmander extends PokemonCharacter {
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
     /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
-
-    /**
      * Pikachu constructor.
      */
     public Charmander() {
+        FireSpin fireSpin = new FireSpin();
+        Flamethrower flamethrower = new Flamethrower();
         setType("fire");
         setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack("Big fire");
-        setMainAttack("Small fire");
+        setSecondAttack(fireSpin.performAttack());
+        setMainAttack(flamethrower.performAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(flamethrower.attackPower());
+        setSecondAttackDamage(fireSpin.attackPower());
     }
 
     @Override
@@ -58,7 +53,6 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String("Attacking opponent with "
                 + getSecondAttack()
                 + " causing a damage of " + getSecondAttackDamage());

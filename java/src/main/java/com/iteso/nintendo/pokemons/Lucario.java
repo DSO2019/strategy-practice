@@ -1,26 +1,29 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
 
+import com.iteso.nintendo.behaviors.AttackBehavior;
+import com.iteso.nintendo.behaviors.QuickAttackBehavior;
+import com.iteso.nintendo.behaviors.SmallFireBehavior;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Arceus extends PokemonCharacter {
+public class Lucario extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 120;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.7;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
     /**
      * Pikachu constructor.
      */
-    public Arceus() {
-        setType("normal");
-        setName("Arceus");
+    public Lucario() {
+        setType("fighter");
+        setName("Lucario");
         setHasEvolution(true);
-        setSecondaryAttackBehavior(new CosmicPowerBehavior());
-        setMainAttackBehavior(new BigFireBehavior());
+        setSecondaryAttackBehavior(new QuickAttackBehavior());
+        setMainAttackBehavior(new SmallFireBehavior());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
     }

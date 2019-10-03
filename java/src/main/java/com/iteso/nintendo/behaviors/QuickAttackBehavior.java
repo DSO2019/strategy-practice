@@ -1,12 +1,11 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.behaviors;
 
-public class EmberBehavior implements AttackBehavior {
-    int attackDamage = 8;
-    String attackName = "Ember";
+public class QuickAttackBehavior implements AttackBehavior {
+    int attackDamage = 5;
+    String attackName = "Quick Attack";
     /**
      * @return the attackDamage
      */
-    
     @Override
     public int getAttackDamage() {
         return this.attackDamage;

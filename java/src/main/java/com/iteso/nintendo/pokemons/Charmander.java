@@ -1,10 +1,12 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
 
-
+import com.iteso.nintendo.behaviors.AttackBehavior;
+import com.iteso.nintendo.behaviors.BigFireBehavior;
+import com.iteso.nintendo.behaviors.SmallFireBehavior;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charizard extends PokemonCharacter {
+public class Charmander extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -16,11 +18,11 @@ public class Charizard extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Charizard() {
+    public Charmander() {
         setType("fire");
-        setName("Charizard");
+        setName("Charmander");
         setHasEvolution(true);
-        setSecondaryAttackBehavior(new EmberBehavior());
+        setSecondaryAttackBehavior(new BigFireBehavior());
         setMainAttackBehavior(new SmallFireBehavior());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);

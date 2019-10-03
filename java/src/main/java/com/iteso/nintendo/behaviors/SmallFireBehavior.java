@@ -1,4 +1,4 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.behaviors;
 
 public class SmallFireBehavior implements AttackBehavior {
     int attackDamage = 3;

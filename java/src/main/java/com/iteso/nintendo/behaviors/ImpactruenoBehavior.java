@@ -1,8 +1,8 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.behaviors;
 
-public class QuickAttackBehavior implements AttackBehavior {
-    int attackDamage = 5;
-    String attackName = "Quick Attack";
+public class ImpactruenoBehavior implements AttackBehavior {
+    int attackDamage = 15;
+    String attackName = "Impactrueno";
     /**
      * @return the attackDamage
      */

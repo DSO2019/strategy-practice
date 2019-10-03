@@ -1,5 +1,6 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.interfaces.*;
+
+import com.iteso.nintendo.interfaces.Attack;
 
 /**
  * Created by rvillalobos on 2/24/18.
@@ -37,7 +38,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get pokemon name.
-     * 
+     *
      * @return Name.
      */
     public final String getName() {
@@ -46,7 +47,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set pokemon name.
-     * 
+     *
      * @param newName New name.
      */
     public final void setName(final String newName) {
@@ -55,14 +56,14 @@ public abstract class PokemonCharacter {
 
     /**
      * Method to perform evolution.
-     * 
+     *
      * @return Result of evolution.
      */
     public abstract String evolve();
 
     /**
      * Method to defend an attack.
-     * 
+     *
      * @param attackDamage Amount of damage to defend.
      * @return Result of defense.
      */
@@ -70,30 +71,31 @@ public abstract class PokemonCharacter {
 
     /**
      * Method to perform second attack.
-     * 
+     *
      * @return Result of attack.
      */
     public abstract String secondAttack();
 
     /**
      * Method to perform main attack.
-     * 
+     *
      * @return Result of main attack.
      */
     public abstract String mainAttack();
 
     /**
      * Method to change pokemon attack.
-     * 
+     *
      * @param attack       Which attack to change.
      * @param attackDamage New damage.
      * @param newAttack    New attack name.
      */
-    public abstract void setNewAttack(int attack, int attackDamage, Attack newAttack);
+    public abstract void setNewAttack(int attack,
+    int attackDamage, Attack newAttack);
 
     /**
      * Pokemon type.
-     * 
+     *
      * @return water, fire, normal, electric, plant, bug, etc.
      */
     public final String getType() {
@@ -102,7 +104,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set new pokemon type.
-     * 
+     *
      * @param newType new pokemon type.
      */
     public final void setType(final String newType) {
@@ -111,7 +113,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Indicate if pokemon can be evolved.
-     * 
+     *
      * @return true or false.
      */
     public final boolean isHasEvolution() {
@@ -120,7 +122,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set indicator of evolution.
-     * 
+     *
      * @param evolution set to true if pokemon can be evolved.
      */
     public final void setHasEvolution(final boolean evolution) {
@@ -129,7 +131,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get name of main attack.
-     * 
+     *
      * @return main attack name.
      */
     public final String getMainAttack() {
@@ -138,7 +140,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set name of main attack.
-     * 
+     *
      * @param newMainAttack new main attack name.
      */
     public final void setMainAttack(final Attack newMainAttack) {
@@ -147,7 +149,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get name of second attack.
-     * 
+     *
      * @return name of second attack.
      */
     public final String getSecondAttack() {
@@ -156,7 +158,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set name of second attack.
-     * 
+     *
      * @param newSecondAttack new second attack name.
      */
     public final void setSecondAttack(final Attack newSecondAttack) {
@@ -165,7 +167,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get damage of main attack.
-     * 
+     *
      * @return main attack damage.
      */
     public final int getMainAttackDamage() {
@@ -174,7 +176,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set main attack new damage.
-     * 
+     *
      * @param newMainAttackDamage new main attack damage.
      */
     public final void setMainAttackDamage(final int newMainAttackDamage) {
@@ -183,7 +185,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get second attack damage.
-     * 
+     *
      * @return second attack damage.
      */
     public final int getSecondAttackDamage() {
@@ -192,7 +194,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set new second attack damage.
-     * 
+     *
      * @param newSecondAttackDamage new second attack damage.
      */
     public final void setSecondAttackDamage(final int newSecondAttackDamage) {
@@ -201,7 +203,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get defense multiplier.
-     * 
+     *
      * @return defense multiplier.
      */
     public final double getDefenseMultiplier() {
@@ -210,7 +212,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set new defense mul;tiplier.
-     * 
+     *
      * @param newDefenseMultiplier new defense multiplier.
      */
     public final void setDefenseMultiplier(final double newDefenseMultiplier) {
@@ -219,7 +221,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Get hit points.
-     * 
+     *
      * @return hit points.
      */
     public final int getHitPoints() {
@@ -228,7 +230,7 @@ public abstract class PokemonCharacter {
 
     /**
      * Set new het points.
-     * 
+     *
      * @param newHitPoints new hit points.
      */
     public final void setHitPoints(final int newHitPoints) {

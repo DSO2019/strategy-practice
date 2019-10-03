@@ -9,7 +9,7 @@ public class Charmander extends PokemonCharacter {
      */
     public static final int HIT_POINTS = 77;
     /**
-     * Defense multiplier value between 0-1.
+     * Defense multiplier value between  0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
     /**

@@ -1,42 +1,37 @@
-package com.iteso.nintendo.pokemons;
-import com.iteso.nintendo.*;
+package com.iteso.nintendo;
+
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
+
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Dugtrio extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 77;
+    public static final int HIT_POINTS = 65;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.3;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
+    public static final double DEFENSE_MULTIPLIER = 0.6;
 
     /**
-     * Charmander constructor.
+     * Dugtrio constructor.
      */
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Dugtrio() {
+        Earthquake earthquake = new Earthquake();
+        Dig dig = new Dig();
+        setType("earth");
+        setName("Dugtrio");
         setHasEvolution(true);
-        setSecondAttack(new Earthquake());
-        setMainAttack(new Dig());
+        setMainAttack(earthquake);
+        setSecondAttack(dig);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(earthquake.getAttackDamage());
+        setSecondAttackDamage(dig.getAttackDamage());
     }
 
     @Override

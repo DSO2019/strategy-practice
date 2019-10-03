@@ -1,5 +1,5 @@
-package com.iteso.nintendo.pokemons;
-import com.iteso.nintendo.*;
+package com.iteso.nintendo;
+
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
 
@@ -7,37 +7,31 @@ import com.iteso.nintendo.attacks.*;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Rotom extends PokemonCharacter {
+public class Charmander extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 20;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 20;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Rotom constructor.
+     * Charmander constructor.
      */
-    public Rotom() {
-        setType("electric water");
-        setName("Rotom");
+    public Charmander() {
+        Dig dig = new Dig();
+        Earthquake earthquake = new Earthquake();
+        setType("fire");
+        setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack(new Thunderbolt());
-        setMainAttack(new Surf());
+        setMainAttack(dig);
+        setSecondAttack(earthquake);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(dig.getAttackDamage());
+        setSecondAttackDamage(earthquake.getAttackDamage());
     }
 
     @Override
@@ -60,6 +54,7 @@ public class Rotom extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
+
         String attackMessage = new String(
                 "Attacking opponent with " + getSecondAttack() + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;

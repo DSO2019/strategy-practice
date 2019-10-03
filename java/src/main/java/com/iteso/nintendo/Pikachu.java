@@ -1,13 +1,14 @@
-package com.iteso.nintendo.pokemons;
-import com.iteso.nintendo.*;
+package com.iteso.nintendo;
+
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
+
 
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Mew extends PokemonCharacter {
+public class Pikachu extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -15,29 +16,23 @@ public class Mew extends PokemonCharacter {
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.5;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 25;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final double DEFENSE_MULTIPLIER = 0.4;
 
     /**
-     * Mew constructor.
+     * Pikachu constructor.
      */
-    public Mew() {
-        setType("psychic");
-        setName("Mew");
+    public Pikachu() {
+        Thunderbolt thunderbolt = new Thunderbolt();
+        Surf surf = new Surf();
+        setType("electric");
+        setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack(new Surf());
-        setMainAttack(new Psychic());
+        setMainAttack(thunderbolt);
+        setSecondAttack(surf);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(thunderbolt.getAttackDamage());
+        setSecondAttackDamage(surf.getAttackDamage());
     }
 
     @Override
@@ -60,7 +55,6 @@ public class Mew extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String(
                 "Attacking opponent with " + getSecondAttack() + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;

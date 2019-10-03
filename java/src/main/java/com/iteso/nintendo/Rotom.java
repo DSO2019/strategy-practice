@@ -1,5 +1,5 @@
-package com.iteso.nintendo.pokemons;
-import com.iteso.nintendo.*;
+package com.iteso.nintendo;
+
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
 
@@ -7,7 +7,7 @@ import com.iteso.nintendo.attacks.*;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Rotom extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -16,28 +16,22 @@ public class Pikachu extends PokemonCharacter {
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.4;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
 
     /**
-     * Pikachu constructor.
+     * Rotom constructor.
      */
-    public Pikachu() {
-        setType("electric");
-        setName("Pikachu");
+    public Rotom() {
+        Surf surf = new Surf();
+        Thunderbolt thunderbolt = new Thunderbolt();
+        setType("electric water");
+        setName("Rotom");
         setHasEvolution(true);
-        setSecondAttack(new Surf());
-        setMainAttack(new Thunderbolt());
+        setMainAttack(surf);
+        setSecondAttack(thunderbolt);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(surf.getAttackDamage());
+        setSecondAttackDamage(thunderbolt.getAttackDamage());
     }
 
     @Override

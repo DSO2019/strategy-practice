@@ -1,42 +1,37 @@
-package com.iteso.nintendo.pokemons;
-import com.iteso.nintendo.*;
+package com.iteso.nintendo;
+
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
+
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Dugtrio extends PokemonCharacter {
+public class Jolteon extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 65;
+    public static final int HIT_POINTS = 75;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.6;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 20;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 23;
+    public static final double DEFENSE_MULTIPLIER = 0.4;
 
     /**
-     * Dugtrio constructor.
+     * Jolteon constructor.
      */
-    public Dugtrio() {
-        setType("earth");
-        setName("Dugtrio");
+    public Jolteon() {
+        Thunderbolt thunderbolt = new Thunderbolt();
+        Psychic psychic = new Psychic();
+        setType("electric");
+        setName("Jolteon");
         setHasEvolution(true);
-        setSecondAttack(new Dig());
-        setMainAttack(new Earthquake());
+        setMainAttack(thunderbolt);
+        setSecondAttack(psychic);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(thunderbolt.getAttackDamage());
+        setSecondAttackDamage(psychic.getAttackDamage());
     }
 
     @Override

@@ -1,37 +1,38 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
+import com.iteso.nintendo.*;
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Jolteon extends PokemonCharacter {
+public class Charmander extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 75;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 20;
+    public static final int MAIN_ATTACK_DAMAGE = 3;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 10;
+    public static final int SECOND_ATTACK_DAMAGE = 17;
 
     /**
-     * Pikachu constructor.
+     * Charmander constructor.
      */
-    public Jolteon() {
-        setType("electric");
-        setName("Jolteon");
+    public Charmander() {
+        setType("fire");
+        setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack(new Psychic());
-        setMainAttack(new Thunderbolt());
+        setSecondAttack(new Earthquake());
+        setMainAttack(new Dig());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);

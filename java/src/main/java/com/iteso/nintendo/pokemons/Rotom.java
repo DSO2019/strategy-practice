@@ -1,37 +1,39 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
+import com.iteso.nintendo.*;
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
+
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Rotom extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 77;
+    public static final int HIT_POINTS = 100;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.3;
+    public static final double DEFENSE_MULTIPLIER = 0.4;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
+    public static final int MAIN_ATTACK_DAMAGE = 20;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
+    public static final int SECOND_ATTACK_DAMAGE = 20;
 
     /**
-     * Pikachu constructor.
+     * Rotom constructor.
      */
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Rotom() {
+        setType("electric water");
+        setName("Rotom");
         setHasEvolution(true);
-        setSecondAttack(new Earthquake());
-        setMainAttack(new Dig());
+        setSecondAttack(new Thunderbolt());
+        setMainAttack(new Surf());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -58,7 +60,6 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String(
                 "Attacking opponent with " + getSecondAttack() + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;

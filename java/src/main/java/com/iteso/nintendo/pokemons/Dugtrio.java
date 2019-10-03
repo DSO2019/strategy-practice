@@ -1,4 +1,5 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
+import com.iteso.nintendo.*;
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
 
@@ -24,7 +25,7 @@ public class Dugtrio extends PokemonCharacter {
     public static final int SECOND_ATTACK_DAMAGE = 23;
 
     /**
-     * Pikachu constructor.
+     * Dugtrio constructor.
      */
     public Dugtrio() {
         setType("earth");

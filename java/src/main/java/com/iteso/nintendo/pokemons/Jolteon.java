@@ -1,37 +1,39 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemons;
+import com.iteso.nintendo.*;
 import com.iteso.nintendo.interfaces.*;
 import com.iteso.nintendo.attacks.*;
+
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Mew extends PokemonCharacter {
+public class Jolteon extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 75;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.5;
+    public static final double DEFENSE_MULTIPLIER = 0.4;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 25;
+    public static final int MAIN_ATTACK_DAMAGE = 20;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final int SECOND_ATTACK_DAMAGE = 10;
 
     /**
-     * Pikachu constructor.
+     * Jolteon constructor.
      */
-    public Mew() {
-        setType("psychic");
-        setName("Mew");
+    public Jolteon() {
+        setType("electric");
+        setName("Jolteon");
         setHasEvolution(true);
-        setSecondAttack(new Surf());
-        setMainAttack(new Psychic());
+        setSecondAttack(new Psychic());
+        setMainAttack(new Thunderbolt());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);

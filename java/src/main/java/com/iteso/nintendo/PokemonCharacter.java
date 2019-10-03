@@ -3,7 +3,9 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public abstract class PokemonCharacter {
+public abstract class PokemonCharacter implements IAtaque{
+    private IAtaque ataque1;
+    private IAtaque ataque2;
 
     /**
      * Pokemon name.
@@ -24,7 +26,7 @@ public abstract class PokemonCharacter {
     /**
      * Second attack name.
      */
-      private String secondAttack = null;
+      private IAtaque secondAttack = null;
     /**
      * Damage caused by main attack.
      */
@@ -128,7 +130,7 @@ public abstract class PokemonCharacter {
      * Get name of main attack.
      * @return main attack name.
      */
-    public final String getMainAttack() {
+    public final IAtaque getMainAttack() {
         return mainAttack;
     }
 
@@ -136,15 +138,15 @@ public abstract class PokemonCharacter {
      * Set name of main attack.
      * @param newMainAttack new main attack name.
      */
-    public final void setMainAttack(final String newMainAttack) {
-        this.mainAttack = newMainAttack;
+    public final void setMainAttack(final IAtaque newMainAttack) {
+        this.ataque1 = newMainAttack;
     }
 
     /**
      * Get name of second attack.
      * @return name of second attack.
      */
-    public final String getSecondAttack() {
+    public final IAtaque getSecondAttack() {
         return secondAttack;
     }
 
@@ -152,7 +154,7 @@ public abstract class PokemonCharacter {
      * Set name of second attack.
      * @param newSecondAttack new second attack name.
      */
-    public final void setSecondAttack(final String newSecondAttack) {
+    public final void setSecondAttack(final IAtaque newSecondAttack) {
         this.secondAttack = newSecondAttack;
     }
 

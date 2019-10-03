@@ -1,9 +1,6 @@
 package com.iteso.nintendo;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Charmander extends PokemonCharacter {
+public class Voltortb extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -24,12 +21,12 @@ public class Charmander extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Voltortb() {
+        setType("electric");
+        setName("Voltorb");
         setHasEvolution(true);
-        setSecondAttack(new BigFire());
-        setMainAttack(new FlareBlitz());
+        setSecondAttack(new Taclear());
+        setMainAttack(new ImpactTrueno());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -89,3 +86,4 @@ public class Charmander extends PokemonCharacter {
     }
 
 }
+

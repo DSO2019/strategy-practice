@@ -3,25 +3,24 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Arceus extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 120;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
-
+    public static final double DEFENSE_MULTIPLIER = 0.7;
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
-        setType("electric");
-        setName("Pikachu");
+    public Arceus() {
+        setType("normal");
+        setName("Arceus");
         setHasEvolution(true);
-        setSecondaryAttackBehavior(new ImpactruenoBehavior());
-        setMainAttackBehavior(new QuickAttackBehavior());
+        setSecondaryAttackBehavior(new CosmicPowerBehavior());
+        setMainAttackBehavior(new BigFireBehavior());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
     }
@@ -45,6 +44,7 @@ public class Pikachu extends PokemonCharacter {
         return defendMessage;
 
     }
+
     @Override
     public final String secondAttack() {
         return this.secondAttack.attack();
@@ -53,7 +53,6 @@ public class Pikachu extends PokemonCharacter {
     @Override
     public final String mainAttack() {
         return this.mainAttack.attack();
-
     }
 
     @Override

@@ -13,27 +13,16 @@ public class Charmander extends PokemonCharacter {
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
     /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
-
-    /**
      * Pikachu constructor.
      */
     public Charmander() {
         setType("fire");
         setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack("Big fire");
-        setMainAttack("Small fire");
+        setSecondaryAttackBehavior(new BigFireBehavior());
+        setMainAttackBehavior(new SmallFireBehavior());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
     }
 
     @Override
@@ -58,35 +47,20 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
-        String attackMessage = new String("Attacking opponent with "
-                + getSecondAttack()
-                + " causing a damage of " + getSecondAttackDamage());
-        return attackMessage;
-
-
+        return this.secondAttack.attack();
     }
 
     @Override
     public final String mainAttack() {
-        String attackMessage = new String("Attacking opponent with "
-                + getMainAttack()
-                + " causing a damage of " + getMainAttackDamage());
-        return attackMessage;
-
+        return this.mainAttack.attack();
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+    public final void setNewAttack(final int attack, AttackBehavior newBehavior) {
         if (attack == 1) {
-            setMainAttack(newAttack);
-            setMainAttackDamage(attackDamage);
+            this.mainAttack = newBehavior;
         } else {
-            setSecondAttack(newAttack);
-            setSecondAttackDamage(attackDamage);
+            this.secondAttack = newBehavior;
         }
     }
-
-
 }

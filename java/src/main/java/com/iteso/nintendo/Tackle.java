@@ -1,14 +1,12 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.IAttack;
+/** Tackle attack class. */
+public class Tackle implements IAttack {
 
-
-public class Tackle implements IAttack{
-    
     /**
      * Method to perform attack.
      * @return Result of attack.
      */
-    public final String performAttack(){
+    public final String performAttack() {
         String attack = "Tackle";
         return attack;
     }
@@ -17,7 +15,8 @@ public class Tackle implements IAttack{
      * Method to return attack power.
      * @return Power of attack.
      */
-    public final int attackPower(){
-        return 10;
+    public final int attackPower() {
+        final int power = 10;
+        return power;
     }
 }

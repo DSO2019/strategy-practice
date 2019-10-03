@@ -1,14 +1,13 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.IAttack;
 
+/** FireSpin attack class. */
+public class FireSpin implements IAttack {
 
-public class FireSpin implements IAttack{
-    
     /**
      * Method to perform attack.
      * @return Result of attack.
      */
-    public final String performAttack(){
+    public final String performAttack() {
         String attack = "FireSpin";
         return attack;
     }
@@ -17,7 +16,8 @@ public class FireSpin implements IAttack{
      * Method to return attack power.
      * @return Power of attack.
      */
-    public final int attackPower(){
-        return 7;
+    public final int attackPower() {
+        final int power = 7;
+        return power;
     }
 }

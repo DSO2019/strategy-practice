@@ -1,5 +1,5 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.Pikachu;
+import com.iteso.nintendo.Snorlax;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -7,30 +7,30 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by AlfredoRodriguez on 2/24/18.
  */
-public class PikachuTest {
-    Pikachu pikachu;
+public class SnorlaxTest {
+    Snorlax snorlax;
 
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        snorlax = new Snorlax();
     }
 
     /** First attack */
     @Test
     public void firstAttack(){
-        assertEquals("Attacking opponent with Impacthunder causing a damage of 25", pikachu.mainAttack());
+        assertEquals("Attacking opponent with Slam causing a damage of 15", snorlax.mainAttack());
     }
 
     /** Second attack */
     @Test
     public void secondAttack(){
-        assertEquals("Attacking opponent with Slam causing a damage of 15", pikachu.secondAttack());
+        assertEquals("Attacking opponent with Tackle causing a damage of 10", snorlax.secondAttack());
     }
 
     /** Defense test */
     @Test
     public void defend(){
-        assertEquals("Defending attack, damage caused is 0 new HP is 90",pikachu.defend(0));
+        assertEquals("Defending attack, damage caused is 0 new HP is 150",snorlax.defend(0));
     }
 
 }

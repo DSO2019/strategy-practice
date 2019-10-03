@@ -1,11 +1,9 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.Flamethrower;
-import com.iteso.nintendo.FireSpin;
 
 /**
  * Created by AlfredoRodriguez on 2/24/18.
  */
-public class Charizard extends PokemonCharacter{
+public class Charizard extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */

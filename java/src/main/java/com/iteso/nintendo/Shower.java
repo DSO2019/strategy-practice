@@ -1,22 +1,22 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.IAttack;
+/** Shower attack class. */
+public class Shower implements IAttack {
 
-public class Shower implements IAttack{
-    
     /**
      * Method to perform attack.
      * @return Result of attack.
      */
-    public final String performAttack(){
+    public final String performAttack() {
         String attack = "Shower";
         return attack;
     }
-        
+
     /**
      * Method to return attack power.
      * @return Power of attack.
      */
-    public final int attackPower(){
-        return 20;
+    public final int attackPower() {
+        final int power = 20;
+        return power;
     }
 }

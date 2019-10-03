@@ -1,9 +1,5 @@
 package com.iteso.nintendo;
 
-import com.iteso.nintendo.PokemonCharacter;
-import com.iteso.nintendo.Slam;
-import com.iteso.nintendo.Impacthunder;
-
 /**
  * Created by rvillalobos on 2/24/18.
  */

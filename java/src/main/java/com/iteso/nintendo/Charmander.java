@@ -1,11 +1,9 @@
 package com.iteso.nintendo;
-import com.iteso.nintendo.Flamethrower;
-import com.iteso.nintendo.FireSpin;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter{
+public class Charmander extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */

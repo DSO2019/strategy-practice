@@ -1,4 +1,8 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemon;
+
+import com.iteso.nintendo.PokemonCharacter;
+import com.iteso.nintendo.attacks.Tackle;
+import com.iteso.nintendo.attacks.Thunderbolt;
 
 /**
  * Created by rvillalobos on 2/24/18.
@@ -25,15 +29,17 @@ public class Pikachu extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Pikachu() {
+        Tackle tackle = new Tackle();
+        Thunderbolt thunderbolt = new Thunderbolt();
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack("Impact Trueno");
-        setMainAttack("Quick Attack");
+        setSecondAttack(tackle);
+        setMainAttack(thunderbolt);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(thunderbolt.getAttackDmg());
+        setSecondAttackDamage(tackle.getAttackDmg());
     }
 
     @Override
@@ -87,6 +93,4 @@ public class Pikachu extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-
 }

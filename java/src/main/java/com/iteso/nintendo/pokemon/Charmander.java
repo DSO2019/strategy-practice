@@ -1,4 +1,6 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.pokemon;
+
+import com.iteso.nintendo.PokemonCharacter;
 
 /**
  * Created by rvillalobos on 2/24/18.

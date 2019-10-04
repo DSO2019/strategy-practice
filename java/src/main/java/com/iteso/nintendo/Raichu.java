@@ -21,7 +21,7 @@ public class Raichu extends PokemonCharacter {
         Impacthunder impacthunder = new Impacthunder();
         setType("electric");
         setName("Raichu");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(slam.performAttack());
         setMainAttack(impacthunder.performAttack());
         setHitPoints(HIT_POINTS);

@@ -21,7 +21,7 @@ public class Snorlax extends PokemonCharacter {
         Slam slam = new Slam();
         setType("useless");
         setName("Snorlax");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(tackle.performAttack());
         setMainAttack(slam.performAttack());
         setHitPoints(HIT_POINTS);

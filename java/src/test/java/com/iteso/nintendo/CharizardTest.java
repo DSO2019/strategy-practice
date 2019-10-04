@@ -33,4 +33,59 @@ public class CharizardTest {
         assertEquals("Defending attack, damage caused is 0 new HP is 100",charizard.defend(0));
     }
 
+    /** Name test */
+    @Test
+    public void test_name(){
+        assertEquals("Charizard", charizard.getName());
+    }
+    
+    /** Evolve test */
+    @Test
+    public void test_evolve(){
+        assertEquals(null, charizard.evolve());
+    }
+
+    /** Type test */
+    @Test
+    public void test_type(){
+        assertEquals("fire", charizard.getType());
+    }
+
+    /** Evolvution test */
+    @Test
+    public void test_evolution(){
+        assertEquals(false, charizard.isHasEvolution());
+    }
+
+    /** Main Power test */
+    @Test
+    public void test_getMain(){
+        assertEquals("Flamethrower", charizard.getMainAttack());
+    }
+
+    /** Second Power test */
+    @Test
+    public void test_getSecondary(){
+        assertEquals("FireSpin", charizard.getSecondAttack());
+    }
+
+    /** Main Damage test */
+    @Test
+    public void test_getMainDamage(){
+        assertEquals(25, charizard.getMainAttackDamage());
+    }
+
+    /** Second Damage test */
+    @Test
+    public void test_getSecondDamage(){
+        assertEquals(7, charizard.getSecondAttackDamage());
+    }
+
+    /** HP test */
+    @Test
+    public void test_getPoints(){
+        assertEquals(100, charizard.getHitPoints());
+    }
+
+
 }

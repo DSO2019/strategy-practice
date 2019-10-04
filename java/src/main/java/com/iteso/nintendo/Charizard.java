@@ -21,7 +21,7 @@ public class Charizard extends PokemonCharacter {
         Flamethrower flamethrower = new Flamethrower();
         setType("fire");
         setName("Charizard");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(fireSpin.performAttack());
         setMainAttack(flamethrower.performAttack());
         setHitPoints(HIT_POINTS);

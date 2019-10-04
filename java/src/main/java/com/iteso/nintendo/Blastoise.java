@@ -20,7 +20,7 @@ public class Blastoise extends PokemonCharacter {
         Shower shower = new Shower();
         setType("water");
         setName("Blastoise");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(slam.performAttack());
         setMainAttack(shower.performAttack());
         setHitPoints(HIT_POINTS);

@@ -33,4 +33,58 @@ public class BlastoiseTest {
         assertEquals("Defending attack, damage caused is 0 new HP is 100",blastoise.defend(0));
     }
 
+    /** Name test */
+    @Test
+    public void test_name(){
+        assertEquals("Blastoise", blastoise.getName());
+    }
+    
+    /** Evolve test */
+    @Test
+    public void test_evolve(){
+        assertEquals(null, blastoise.evolve());
+    }
+
+    /** Type test */
+    @Test
+    public void test_type(){
+        assertEquals("water", blastoise.getType());
+    }
+
+    /** Evolvution test */
+    @Test
+    public void test_evolution(){
+        assertEquals(false, blastoise.isHasEvolution());
+    }
+
+    /** Main Power test */
+    @Test
+    public void test_getMain(){
+        assertEquals("Shower", blastoise.getMainAttack());
+    }
+
+    /** Second Power test */
+    @Test
+    public void test_getSecondary(){
+        assertEquals("Slam", blastoise.getSecondAttack());
+    }
+
+    /** Main Damage test */
+    @Test
+    public void test_getMainDamage(){
+        assertEquals(20, blastoise.getMainAttackDamage());
+    }
+
+    /** Second Damage test */
+    @Test
+    public void test_getSecondDamage(){
+        assertEquals(15, blastoise.getSecondAttackDamage());
+    }
+
+    /** HP test */
+    @Test
+    public void test_getPoints(){
+        assertEquals(100, blastoise.getHitPoints());
+    }
+
 }

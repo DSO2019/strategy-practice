@@ -3,11 +3,11 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Mewtwo extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 79;
+    public static final int HIT_POINTS = 90;
     /**
      * Defense multiplier value between 0-1.
      */
@@ -17,11 +17,11 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
+    public Mewtwo() {
         VoltTackle voltTackle = new VoltTackle();
         Psychic psychic = new Psychic();
-        setType("electric");
-        setName("Pikachu");
+        setType("psychic");
+        setName("Mewtwo");
         setHasEvolution(true);
         setSecondAttack(voltTackle.getAttackName());
         setMainAttack(psychic.getAttackName());

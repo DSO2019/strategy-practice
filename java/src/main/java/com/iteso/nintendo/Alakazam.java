@@ -3,32 +3,32 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Alakazam extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 79;
+    public static final int HIT_POINTS = 70;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.5;
+    public static final double DEFENSE_MULTIPLIER = 0.2;
     
 
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
-        VoltTackle voltTackle = new VoltTackle();
-        Psychic psychic = new Psychic();
-        setType("electric");
-        setName("Pikachu");
+    public Alakazam() {
+        Scratch scratch = new Scratch();
+        FutureSight futureSight = new FutureSight();
+        setType("psychic");
+        setName("Alakazam");
         setHasEvolution(true);
-        setSecondAttack(voltTackle.getAttackName());
-        setMainAttack(psychic.getAttackName());
+        setSecondAttack(futureSight.getAttackName());
+        setMainAttack(scratch.getAttackName());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(psychic.getAttackDamage());
-        setSecondAttackDamage(voltTackle.getAttackDamage());
+        setMainAttackDamage(scratch.getAttackDamage());
+        setSecondAttackDamage(futureSight.getAttackDamage());
     }
 
     @Override

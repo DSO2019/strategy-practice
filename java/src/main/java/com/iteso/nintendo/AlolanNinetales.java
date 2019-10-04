@@ -28,7 +28,7 @@ public class AlolanNinetales extends PokemonCharacter {
     public AlolanNinetales() {
         setType("ice/fairy");
         setName("Ninetales");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(new Ember());
         setMainAttack(new Moonblast());
         setHitPoints(HIT_POINTS);

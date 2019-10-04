@@ -2,8 +2,8 @@ package com.iteso.nintendo;
 
 public interface Attack {
 
-    public String performAttack();
+    public abstract String performAttack();
 
-    public int getDamage();
+    public abstract int getDamage();
 
 }

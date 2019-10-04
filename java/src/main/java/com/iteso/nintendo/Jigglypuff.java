@@ -2,7 +2,7 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Jigglypuff extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -15,18 +15,18 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
+    public Jigglypuff() {
     	ImpactTrueno it = new ImpactTrueno();
     	QuickAttack qa = new QuickAttack();
-        setType("electric");
-        setName("Pikachu");
+        setType("fairy");
+        setName("Jigglypuff");
         setHasEvolution(true);
         setSecondAttack(new ImpactTrueno());
         setMainAttack(new QuickAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(qa.getAttackDamage());
-        setSecondAttackDamage(it.getAttackDamage());
+        setMainAttackDamage(it.getAttackDamage());
+        setSecondAttackDamage(qa.getAttackDamage());
     }
 
     @Override

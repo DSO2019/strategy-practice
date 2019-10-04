@@ -1,5 +1,4 @@
 package com.iteso.nintendo;
-
 /**
  * Created by rvillalobos on 2/24/18.
  */
@@ -12,28 +11,22 @@ public class Charmander extends PokemonCharacter {
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
 
     /**
      * Pikachu constructor.
      */
     public Charmander() {
+    	SmallFire sf = new SmallFire();
+    	BigFire bf = new BigFire();
         setType("fire");
         setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack("Big fire");
-        setMainAttack("Small fire");
+        setSecondAttack(bf);
+        setMainAttack(sf);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(sf.getAttackDamage());
+        setSecondAttackDamage(bf.getAttackDamage());
     }
 
     @Override
@@ -78,7 +71,7 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final IAttack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);
@@ -87,6 +80,24 @@ public class Charmander extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
+
+	@Override
+	public String getAttack() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getAttackDamage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setAttackDamage(int newAttackDamage) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 }

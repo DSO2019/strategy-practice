@@ -3,7 +3,7 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Charizard extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -11,25 +11,25 @@ public class Charmander extends PokemonCharacter {
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.3;
+    public static final double DEFENSE_MULTIPLIER = 0.7;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
+    public static final int MAIN_ATTACK_DAMAGE = 6;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
+    public static final int SECOND_ATTACK_DAMAGE = 22;
 
     /**
-     * Charmander constructor.
+     * Charizard constructor.
      */
-    public Charmander() {
+    public Charizard() {
         setType("fire");
-        setName("Charmander");
+        setName("Charizard");
         setHasEvolution(true);
         Attack mainAttack = new Tackle();
-        Attack secondAttack = new Rasengan();
+        Attack secondAttack = new Hadouken();
         setSecondAttack(secondAttack);
         setMainAttack(mainAttack);
         setHitPoints(HIT_POINTS);

@@ -1,24 +1,21 @@
 package com.iteso.nintendo;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Charmander extends PokemonCharacter {
+public class Salazzle extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 39;
+    public static final int HIT_POINTS = 68;
     /**
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.5;
 
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Salazzle() {
+        setType("poison");
+        setName("Salazzle");
         setHasEvolution(true);
         setSecondAttack(new punch());
-        setMainAttack(new flameThrower()); 
+        setMainAttack(new venoshock()); 
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
     }
@@ -40,7 +37,6 @@ public class Charmander extends PokemonCharacter {
 
         setHitPoints(newHP);
         return defendMessage;
-
     }
 
     @Override
@@ -50,8 +46,6 @@ public class Charmander extends PokemonCharacter {
                 + getSecondAttack()
                 + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;
-
-
     }
 
     @Override
@@ -60,7 +54,6 @@ public class Charmander extends PokemonCharacter {
                 + getMainAttack()
                 + " causing a damage of " + getMainAttackDamage());
         return attackMessage;
-
     }
 
     @Override

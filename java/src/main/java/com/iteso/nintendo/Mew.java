@@ -1,24 +1,21 @@
 package com.iteso.nintendo;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Charmander extends PokemonCharacter {
+public class Mew extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 39;
+    public static final int HIT_POINTS = 100;
     /**
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.5;
 
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Mew() {
+        setType("psychic");
+        setName("Mew");
         setHasEvolution(true);
         setSecondAttack(new punch());
-        setMainAttack(new flameThrower()); 
+        setMainAttack(new confusion()); 
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
     }

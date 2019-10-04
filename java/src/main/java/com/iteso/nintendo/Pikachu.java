@@ -7,19 +7,11 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 35;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final double DEFENSE_MULTIPLIER = 0.5;
 
     /**
      * Pikachu constructor.
@@ -28,12 +20,10 @@ public class Pikachu extends PokemonCharacter {
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack("Impact Trueno");
-        setMainAttack("Quick Attack");
+        setMainAttack(new thunder());
+        setSecondAttack(new punch());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
     }
 
     @Override
@@ -53,40 +43,30 @@ public class Pikachu extends PokemonCharacter {
 
         setHitPoints(newHP);
         return defendMessage;
-
     }
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String("Attacking opponent with "
                 + getSecondAttack()
                 + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;
-
-
     }
 
     @Override
     public final String mainAttack() {
         String attackMessage = new String("Attacking opponent with "
-                + getMainAttack()
-                + " causing a damage of " + getMainAttackDamage());
+            + getMainAttack()
+            + " causing a damage of " + getMainAttackDamage());
         return attackMessage;
-
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+    public final void setNewAttack(final int attack, final attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
-            setMainAttackDamage(attackDamage);
         } else {
             setSecondAttack(newAttack);
-            setSecondAttackDamage(attackDamage);
         }
     }
-
-
 }

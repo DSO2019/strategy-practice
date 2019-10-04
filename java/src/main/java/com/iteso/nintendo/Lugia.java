@@ -1,14 +1,11 @@
 package com.iteso.nintendo;
 
-import com.iteso.nintendo.Moves.BoltStrike;
-import com.iteso.nintendo.Moves.FireBlast;
-import com.iteso.nintendo.Moves.Flamethrower;
-import com.iteso.nintendo.Moves.ThunderBolt;
+import com.iteso.nintendo.Moves.*;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Lugia extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -27,20 +24,20 @@ public class Charmander extends PokemonCharacter {
     public static final int SECOND_ATTACK_DAMAGE = 15;
 
     /**
-     * Pikachu constructor.
+     * Lugia constructor.
      */
-    public Charmander() {
-        FireBlast fireBlast = new FireBlast();
-        Flamethrower flamethrower = new Flamethrower();
-        setType("fire");
-        setName("Charmander");
+    public Lugia() {
+        Aeroblast aeroblast = new Aeroblast();
+        AirSlash airSlash = new AirSlash();
+        setType("air");
+        setName("Lugia");
         setHasEvolution(true);
-        setSecondAttack(fireBlast);
-        setMainAttack(flamethrower);
+        setSecondAttack(aeroblast);
+        setMainAttack(airSlash);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(fireBlast.attackDamage());
-        setSecondAttackDamage(flamethrower.attackDamage());
+        setMainAttackDamage(aeroblast.attackDamage());
+        setSecondAttackDamage(airSlash.attackDamage());
     }
 
     @Override

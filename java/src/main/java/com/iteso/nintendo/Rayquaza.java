@@ -1,14 +1,11 @@
 package com.iteso.nintendo;
 
-import com.iteso.nintendo.Moves.BoltStrike;
-import com.iteso.nintendo.Moves.FireBlast;
-import com.iteso.nintendo.Moves.Flamethrower;
-import com.iteso.nintendo.Moves.ThunderBolt;
+import com.iteso.nintendo.Moves.*;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Rayquaza extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -27,20 +24,20 @@ public class Charmander extends PokemonCharacter {
     public static final int SECOND_ATTACK_DAMAGE = 15;
 
     /**
-     * Pikachu constructor.
+     * Rayquaza constructor.
      */
-    public Charmander() {
-        FireBlast fireBlast = new FireBlast();
-        Flamethrower flamethrower = new Flamethrower();
-        setType("fire");
-        setName("Charmander");
+    public Rayquaza() {
+        DragonBreath dragonBreath = new DragonBreath();
+        DragonClaw dragonClaw = new DragonClaw();
+        setType("air");
+        setName("Rayquaza");
         setHasEvolution(true);
-        setSecondAttack(fireBlast);
-        setMainAttack(flamethrower);
+        setSecondAttack(dragonBreath);
+        setMainAttack(dragonClaw);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(fireBlast.attackDamage());
-        setSecondAttackDamage(flamethrower.attackDamage());
+        setMainAttackDamage(dragonBreath.attackDamage());
+        setSecondAttackDamage(dragonClaw.attackDamage());
     }
 
     @Override

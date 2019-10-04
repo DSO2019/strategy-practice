@@ -1,5 +1,8 @@
 package com.iteso.nintendo;
 
+import com.iteso.nintendo.Moves.BoltStrike;
+import com.iteso.nintendo.Moves.ThunderBolt;
+
 /**
  * Created by rvillalobos on 2/24/18.
  */
@@ -25,15 +28,17 @@ public class Pikachu extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Pikachu() {
+        ThunderBolt thunderbolt = new ThunderBolt();
+        BoltStrike boltStrike = new BoltStrike();
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack("Impact Trueno");
-        setMainAttack("Quick Attack");
+        setSecondAttack(boltStrike);
+        setMainAttack(thunderbolt);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(thunderbolt.attackDamage());
+        setSecondAttackDamage(boltStrike.attackDamage());
     }
 
     @Override
@@ -77,8 +82,7 @@ public class Pikachu extends PokemonCharacter {
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+    public void setNewAttack(int attack, int attackDamage, Attacks newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);
@@ -89,4 +93,23 @@ public class Pikachu extends PokemonCharacter {
     }
 
 
+    @Override
+    public String attackName() {
+        return null;
+    }
+
+    @Override
+    public void setAttackName(String attackName) {
+
+    }
+
+    @Override
+    public int attackDamage() {
+        return 0;
+    }
+
+    @Override
+    public void setAttackDamage(int attackDamage) {
+
+    }
 }

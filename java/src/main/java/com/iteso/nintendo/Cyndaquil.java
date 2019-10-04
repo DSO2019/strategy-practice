@@ -8,7 +8,7 @@ import com.iteso.nintendo.Moves.ThunderBolt;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Cyndaquil extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -29,11 +29,11 @@ public class Charmander extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Charmander() {
+    public Cyndaquil() {
         FireBlast fireBlast = new FireBlast();
         Flamethrower flamethrower = new Flamethrower();
         setType("fire");
-        setName("Charmander");
+        setName("Cyndaquil");
         setHasEvolution(true);
         setSecondAttack(fireBlast);
         setMainAttack(flamethrower);

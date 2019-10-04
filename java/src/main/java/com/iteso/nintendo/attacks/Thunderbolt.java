@@ -10,7 +10,6 @@ public class Thunderbolt implements Attacks {
      * Attack dmg.
      */
     private static int attDmg;
-
     /**
      * Do an attack.
      *
@@ -28,7 +27,7 @@ public class Thunderbolt implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 10;
+        return 6;
     }
 
     /**

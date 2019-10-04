@@ -6,7 +6,7 @@ public class QuickAttack implements Attacks {
     /**
      * Attack name.
      */
-    static final String ATTACKNAME = "Thunderbolt";
+    static final String ATTACKNAME = "QuickAttack";
     /**
      * Attack dmg.
      */

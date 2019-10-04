@@ -89,7 +89,7 @@ public abstract class PokemonCharacter  {
      * @param newAttack New attack name.
      */
     public abstract void setNewAttack(int attack,
-                                      int attackDamage, String newAttack);
+                                      int attackDamage, Attacks newAttack);
 
     /**
      * Pokemon type.

@@ -11,7 +11,6 @@ public class Tackle implements Attacks {
      * Attack dmg.
      */
     private static int attDmg;
-
     /**
      * Do an attack.
      *
@@ -29,7 +28,7 @@ public class Tackle implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 3;
+        return 6;
     }
 
     /**

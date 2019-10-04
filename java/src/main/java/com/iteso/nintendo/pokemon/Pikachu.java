@@ -1,5 +1,6 @@
 package com.iteso.nintendo.pokemon;
 
+import com.iteso.nintendo.Attacks;
 import com.iteso.nintendo.PokemonCharacter;
 import com.iteso.nintendo.attacks.Tackle;
 import com.iteso.nintendo.attacks.Thunderbolt;
@@ -38,8 +39,8 @@ public class Pikachu extends PokemonCharacter {
         setMainAttack(thunderbolt);
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(thunderbolt.getAttackDmg());
-        setSecondAttackDamage(tackle.getAttackDmg());
+        setMainAttackDamage(thunderbolt.getAttackDMG());
+        setSecondAttackDamage(tackle.getAttackDMG());
     }
 
     @Override
@@ -82,9 +83,16 @@ public class Pikachu extends PokemonCharacter {
 
     }
 
+    /**
+     * Method to change pokemon attack.
+     *
+     * @param attack       Which attack to change.
+     * @param attackDamage New damage.
+     * @param newAttack    New attack name.
+     */
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final Attacks newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);

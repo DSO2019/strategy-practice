@@ -28,8 +28,8 @@ public class Pikachu extends PokemonCharacter {
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack("Impact Trueno");
-        setMainAttack("Quick Attack");
+        setSecondAttack("Pikachu " + new Confusion().atacaprro());
+        setMainAttack("Pikachu " + new Latigocepa().atacaprro());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -58,21 +58,14 @@ public class Pikachu extends PokemonCharacter {
 
     @Override
     public final String secondAttack() {
-
-        String attackMessage = new String("Attacking opponent with "
-                + getSecondAttack()
-                + " causing a damage of " + getSecondAttackDamage());
-        return attackMessage;
+        return getSecondAttack();
 
 
     }
 
     @Override
     public final String mainAttack() {
-        String attackMessage = new String("Attacking opponent with "
-                + getMainAttack()
-                + " causing a damage of " + getMainAttackDamage());
-        return attackMessage;
+        return getMainAttack();
 
     }
 

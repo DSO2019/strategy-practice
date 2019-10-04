@@ -3,33 +3,33 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Charmander extends PokemonCharacter {
+public class Venusaur extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 77;
+    public static final int HIT_POINTS = 100;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.3;
+    public static final double DEFENSE_MULTIPLIER = 0.4;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
+    public static final int MAIN_ATTACK_DAMAGE = 5;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
+    public static final int SECOND_ATTACK_DAMAGE = 15;
 
     /**
-     * Pikachu constructor.
+     * Venusaur constructor.
      */
-    public Charmander() {
-        setType("fire");
-        setName("Charmander");
+    public Venusaur() {
+        setType("hoja");
+        setName("Venusaur");
         setHasEvolution(true);
-        setSecondAttack("Charmander " + new Latigocepa().atacaprro());
-        setMainAttack("Charmander " + new Hojaafilada().atacaprro());
+        setSecondAttack("Venusaur " + new Confusion().atacaprro());
+        setMainAttack("Venusaur " + new Latigocepa().atacaprro());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);

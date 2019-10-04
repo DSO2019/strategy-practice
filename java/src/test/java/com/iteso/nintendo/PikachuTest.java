@@ -1,7 +1,7 @@
 package com.iteso.nintendo;
 
-import org.junit.Before;
-import org.junit.Test;
+import com.iteso.nintendo.characters.Pikachu;
+
 import static org.junit.Assert.assertEquals;
 
 /**

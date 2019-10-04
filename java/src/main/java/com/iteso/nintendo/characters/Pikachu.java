@@ -1,4 +1,5 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.characters;
+import com.iteso.nintendo.attacks.*;
 
 /**
  * Created by rvillalobos on 2/24/18.
@@ -28,8 +29,8 @@ public class Pikachu extends PokemonCharacter {
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
-        setSecondAttack("Impact Trueno");
-        setMainAttack("Quick Attack");
+        setSecondAttack(new ThunderWave());
+        setMainAttack(new ImpactThunder());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -78,7 +79,7 @@ public class Pikachu extends PokemonCharacter {
 
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final Attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);

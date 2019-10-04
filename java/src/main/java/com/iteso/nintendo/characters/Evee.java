@@ -1,9 +1,8 @@
-package com.iteso.nintendo;
+package com.iteso.nintendo.characters;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Charmander extends PokemonCharacter {
+import com.iteso.nintendo.attacks.*;
+
+public class Evee extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -24,12 +23,12 @@ public class Charmander extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Charmander() {
+    public Evee() {
         setType("fire");
-        setName("Charmander");
+        setName("Evee");
         setHasEvolution(true);
-        setSecondAttack("Big fire");
-        setMainAttack("Small fire");
+        setSecondAttack(new Tackle());
+        setMainAttack(new SandAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -78,7 +77,7 @@ public class Charmander extends PokemonCharacter {
 
     @Override
     public final void setNewAttack(final int attack, final int attackDamage,
-                                   final String newAttack) {
+                                   final Attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             setMainAttackDamage(attackDamage);
@@ -87,6 +86,5 @@ public class Charmander extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
 
 }

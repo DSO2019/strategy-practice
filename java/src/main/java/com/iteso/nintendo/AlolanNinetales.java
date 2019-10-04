@@ -1,37 +1,39 @@
 package com.iteso.nintendo;
 
+
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class AlolanNinetales extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
+    public static final int MAIN_ATTACK_DAMAGE = 3;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final int SECOND_ATTACK_DAMAGE = 17;
 
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
-        setType("electric");
-        setName("Pikachu");
+    public AlolanNinetales() {
+        setType("ice/fairy");
+        setName("Ninetales");
         setHasEvolution(true);
-        setSecondAttack(new Thunder());
-        setMainAttack(new ElectroWeb());
+        setSecondAttack(new Ember());
+        setMainAttack(new Moonblast());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
+
     }
 
     @Override
@@ -75,7 +77,8 @@ public class Pikachu extends PokemonCharacter {
     }
 
     @Override
-    public final void setNewAttack(final int attack, final Attack newAttack) {
+    public final void setNewAttack(final int attack,
+                                   final Attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
         } else {
@@ -85,3 +88,4 @@ public class Pikachu extends PokemonCharacter {
 
 
 }
+

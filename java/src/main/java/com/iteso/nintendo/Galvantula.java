@@ -1,9 +1,6 @@
 package com.iteso.nintendo;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Pikachu extends PokemonCharacter {
+public class Galvantula extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -24,11 +21,11 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
-        setType("electric");
-        setName("Pikachu");
+    public Galvantula() {
+        setType("electric/bug");
+        setName("Galvantula");
         setHasEvolution(true);
-        setSecondAttack(new Thunder());
+        setSecondAttack(new BugBuzz());
         setMainAttack(new ElectroWeb());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
@@ -85,3 +82,4 @@ public class Pikachu extends PokemonCharacter {
 
 
 }
+

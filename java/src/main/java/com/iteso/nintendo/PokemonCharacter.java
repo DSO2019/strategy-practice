@@ -20,19 +20,12 @@ public abstract class PokemonCharacter {
     /**
      * Main attack name.
      */
-    private String mainAttack = null;
+    private Attack mainAttack = null;
     /**
      * Second attack name.
      */
-      private String secondAttack = null;
-    /**
-     * Damage caused by main attack.
-     */
-    private int mainAttackDamage = 0;
-    /**
-     * Damage caused by second attack.
-     */
-      private int secondAttackDamage = 0;
+      private Attack secondAttack = null;
+
     /**
      * Multiplier to calculate damage received.
      */
@@ -90,7 +83,7 @@ public abstract class PokemonCharacter {
      * @param newAttack New attack name.
      */
     public abstract void setNewAttack(int attack,
-                                      int attackDamage, String newAttack);
+                                      Attack newAttack);
 
     /**
      * Pokemon type.
@@ -129,14 +122,14 @@ public abstract class PokemonCharacter {
      * @return main attack name.
      */
     public final String getMainAttack() {
-        return mainAttack;
+        return mainAttack.performAttack();
     }
 
     /**
      * Set name of main attack.
      * @param newMainAttack new main attack name.
      */
-    public final void setMainAttack(final String newMainAttack) {
+    public final void setMainAttack(final Attack newMainAttack) {
         this.mainAttack = newMainAttack;
     }
 
@@ -145,14 +138,14 @@ public abstract class PokemonCharacter {
      * @return name of second attack.
      */
     public final String getSecondAttack() {
-        return secondAttack;
+        return secondAttack.performAttack();
     }
 
     /**
      * Set name of second attack.
      * @param newSecondAttack new second attack name.
      */
-    public final void setSecondAttack(final String newSecondAttack) {
+    public final void setSecondAttack(final Attack newSecondAttack) {
         this.secondAttack = newSecondAttack;
     }
 
@@ -161,15 +154,7 @@ public abstract class PokemonCharacter {
      * @return main attack damage.
      */
     public final int getMainAttackDamage() {
-        return mainAttackDamage;
-    }
-
-    /**
-     * Set main attack new damage.
-     * @param newMainAttackDamage new main attack damage.
-     */
-    public final void setMainAttackDamage(final int newMainAttackDamage) {
-        this.mainAttackDamage = newMainAttackDamage;
+        return mainAttack.getDamage();
     }
 
     /**
@@ -177,15 +162,7 @@ public abstract class PokemonCharacter {
      * @return second attack damage.
      */
     public final int getSecondAttackDamage() {
-        return secondAttackDamage;
-    }
-
-    /**
-     * Set new second attack damage.
-     * @param newSecondAttackDamage new second attack damage.
-     */
-    public final void setSecondAttackDamage(final int newSecondAttackDamage) {
-        this.secondAttackDamage = newSecondAttackDamage;
+        return secondAttack.getDamage();
     }
 
     /**

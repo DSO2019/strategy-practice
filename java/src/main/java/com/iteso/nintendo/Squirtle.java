@@ -21,7 +21,7 @@ public class Squirtle extends PokemonCharacter {
         Surf surf = new Surf();
         WaterGun waterGun = new WaterGun();
         setType("water");
-        setName("Goldeen");
+        setName("Squirtle");
         setHasEvolution(true);
         setSecondAttack(surf.getAttackName());
         setMainAttack(waterGun.getAttackName());

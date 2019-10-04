@@ -9,5 +9,7 @@ public interface Ataque {
       * @return mensaje.
       */
      String atacaprro();
+    int getAttackDamage();
+
 
 }

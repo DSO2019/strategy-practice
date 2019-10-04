@@ -6,6 +6,15 @@ package com.iteso.nintendo;
  */
 public class Contraataque implements Ataque {
     /**
+     * damagevalor.
+     */
+    private static final int DAM = 20;
+
+    /**
+     * damage.
+     */
+    private int damage = DAM;
+    /**
      * metodo para atacar.
      * @return mensaje.
      */
@@ -14,4 +23,13 @@ public class Contraataque implements Ataque {
                  new String("contraataca,doble poder...");
         return mensajeparaatacar;
     };
+    /**
+     * metodo getattackdamage.
+     * @return damage.
+     */
+    @Override
+    public final int getAttackDamage() {
+        return this.damage;
+    }
+
 }

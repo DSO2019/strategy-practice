@@ -1,6 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
+
 class Attack(ABC):
 
     @abstractmethod
@@ -10,4 +11,3 @@ class Attack(ABC):
     @abstractmethod
     def getDamage() -> int:
         pass
-

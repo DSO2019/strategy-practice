@@ -3,6 +3,7 @@ from Attack import Attack
 from Thunder import Thunder
 from ElectroWeb import ElectroWeb
 
+
 class Pikachu(PokemonCharacter):
 
     def __init__(self):
@@ -18,13 +19,13 @@ class Pikachu(PokemonCharacter):
     def evolve(self) -> str:
         return None
 
-    def defend(self, attack:int) -> str:
+    def defend(self, attack: int) -> str:
         damage = int(attack * super().getDefenseMultiplier())
         newHP = super().getHitPoints() - damage
-        defendMessage = "Defending attack, damage caused is {} new HP is {}".format(damage, newHP) 
+        defendMessage = "Defending attack, damage caused is {} new HP is {}".format(damage, newHP)
         super().setHitPoints(newHP)
         return defendMessage
-    
+
     def secondAttack(self) -> str:
         attackMessage = "Attacking opponent with {} causing a damage of {}".format(super().getSecondAttack(), super().getSecondAttackDamage())
         return attackMessage
@@ -32,8 +33,8 @@ class Pikachu(PokemonCharacter):
     def mainAttack(self) -> str:
         attackMessage = "Attacking opponent with {} causing a damage of {}".format(super().getMainAttack(), super().getMainAttackDamage())
         return attackMessage
-    
-    def setNewAttack(self, attack:int, newAttack:Attack)->None:
+
+    def setNewAttack(self, attack: int, newAttack: Attack) -> None:
         if(attack == 1):
             super().setMainAttack(newAttack)
         else:

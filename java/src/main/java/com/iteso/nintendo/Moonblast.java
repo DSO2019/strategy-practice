@@ -1,13 +1,29 @@
 package com.iteso.nintendo;
 
-public class Moonblast implements Attack{
-    private int damage = 95;
+/**
+ * A powerful fairy type attack.
+ */
+public final class Moonblast implements Attack {
 
-    public String performAttack(){
+     /**
+     * Constructor.
+     */
+    private Moonblast() {
+
+    }
+
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 95;
+
+    @Override
+    public static String performAttack() {
         return "Moon blast";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

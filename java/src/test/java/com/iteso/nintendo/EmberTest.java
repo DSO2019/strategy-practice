@@ -10,6 +10,7 @@ import static org.mockito.Matchers.eq;
 
 public class EmberTest{
     Ember ember;
+    
 
     @Before
     public void setUp(){

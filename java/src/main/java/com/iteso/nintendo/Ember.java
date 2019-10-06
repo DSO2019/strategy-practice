@@ -1,13 +1,29 @@
 package com.iteso.nintendo;
 
-public class Ember implements Attack{
-    private int damage = 40;
+/**
+ * A fire type attack.
+ */
+public final class Ember implements Attack {
 
-    public String performAttack(){
+     /**
+     * Constructor.
+     */
+    private Ember() {
+
+    }
+
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 40;
+
+    @Override
+    public static String performAttack() {
         return "Ember";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

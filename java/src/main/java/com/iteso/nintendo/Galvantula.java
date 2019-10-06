@@ -1,5 +1,8 @@
 package com.iteso.nintendo;
 
+/**
+ * Really good insect pokemon.
+ */
 public class Galvantula extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.

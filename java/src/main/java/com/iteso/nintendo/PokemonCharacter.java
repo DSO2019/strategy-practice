@@ -79,7 +79,6 @@ public abstract class PokemonCharacter {
     /**
      * Method to change pokemon attack.
      * @param attack Which attack to change.
-     * @param attackDamage New damage.
      * @param newAttack New attack name.
      */
     public abstract void setNewAttack(int attack,

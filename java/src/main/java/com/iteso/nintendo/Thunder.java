@@ -1,14 +1,29 @@
 package com.iteso.nintendo;
 
-public class Thunder implements Attack {
+/**
+ * A very powerful electric type attack.
+ */
+public final class Thunder implements Attack {
 
-    private int damage = 110;
+     /**
+     * Constructor.
+     */
+    private Thunder() {
 
-    public String performAttack(){
+    }
+
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 110;
+
+    @Override
+    public static String performAttack() {
         return "Thunder";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

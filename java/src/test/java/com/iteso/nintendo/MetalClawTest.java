@@ -10,6 +10,7 @@ import static org.mockito.Matchers.eq;
 
 public class MetalClawTest{
     MetalClaw metalClaw;
+    
 
     @Before
     public void setUp(){

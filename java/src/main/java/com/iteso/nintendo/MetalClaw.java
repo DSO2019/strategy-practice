@@ -1,13 +1,29 @@
 package com.iteso.nintendo;
 
-public class MetalClaw implements Attack{
-    private int damage = 50;
+/**
+ * A steel type attack.
+ */
+public final class MetalClaw implements Attack {
 
-    public String performAttack(){
+     /**
+     * Constructor.
+     */
+    private MetalClaw() {
+
+    }
+
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 50;
+
+    @Override
+    public static String performAttack() {
         return "Metal Claw";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

@@ -1,14 +1,29 @@
 package com.iteso.nintendo;
 
-public class ElectroWeb implements Attack {
+/**
+ * A practical electric type attack.
+ */
+public final class ElectroWeb implements Attack {
 
-    private int damage = 55;
+    /**
+     * Constructor.
+     */
+    private ElectroWeb() {
 
-    public String performAttack(){
+    }
+
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 55;
+
+    @Override
+    public static String performAttack() {
         return "Electroweb";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

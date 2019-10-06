@@ -1,13 +1,28 @@
 package com.iteso.nintendo;
 
-public class BugBuzz implements Attack{
-    private int damage = 90;
+/**
+ * A powerful bug type attack.
+ */
+public final class BugBuzz implements Attack {
 
-    public String performAttack(){
+    /**
+     * Constructor.
+     */
+    private BugBuzz() {
+
+    }
+    /**
+     * Damage of the attack.
+     */
+    private static final int DAMAGE = 90;
+
+    @Override
+    public static String performAttack() {
         return "Bug Buzz";
     }
 
-    public int getDamage(){
-        return damage;
+    @Override
+    public static int getDamage() {
+        return DAMAGE;
     }
 }

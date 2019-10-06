@@ -10,6 +10,7 @@ import static org.mockito.Matchers.eq;
 
 public class ThunderTest{
     Thunder thunder;
+    
 
     @Before
     public void setUp(){

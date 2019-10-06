@@ -1,11 +1,12 @@
+from Attack import Attack
 
 class MetalClaw(Attack):
 
     def __init__(self):
         self.damage = 50
     
-    def performAttack() -> str:
-        return "Metal CLaw"
+    def performAttack(self) -> str:
+        return "Metal Claw"
 
-    def getDamage() -> int:
-        return damage 
+    def getDamage(self) -> int:
+        return self.damage 

@@ -1,10 +1,12 @@
-class Moonblast(Attack):
+from Attack import Attack
+
+class Thunder(Attack):
 
     def __init__(self):
         self.damage = 110
     
-    def performAttack() -> str:
+    def performAttack(self) -> str:
         return "Thunder"
 
-    def getDamage() -> int:
-        return damage 
+    def getDamage(self) -> int:
+        return self.damage 

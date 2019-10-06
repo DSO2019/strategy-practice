@@ -1,12 +1,12 @@
-from abc import ABC, abstractmethod
 from __future__ import annotations
+from abc import ABC, abstractmethod
 
 class Attack(ABC):
 
     @abstractmethod
-    def performAttack() -> str:
+    def performAttack(self):
         pass
 
     @abstractmethod
-    def getDamage() -> int:
+    def getDamage(self):
         pass

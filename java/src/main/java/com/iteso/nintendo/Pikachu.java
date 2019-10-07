@@ -16,8 +16,8 @@ public class Pikachu extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Pikachu() {
-    	ImpactTrueno it = new ImpactTrueno();
-    	QuickAttack qa = new QuickAttack();
+        ImpactTrueno it = new ImpactTrueno();
+        QuickAttack qa = new QuickAttack();
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
@@ -80,23 +80,4 @@ public class Pikachu extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-	@Override
-	public String getAttack() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getAttackDamage() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void setAttackDamage(int newAttackDamage) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

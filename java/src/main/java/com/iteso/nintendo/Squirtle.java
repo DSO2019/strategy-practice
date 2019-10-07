@@ -16,8 +16,8 @@ public class Squirtle extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Squirtle() {
-    	SmallFire sf = new SmallFire();
-    	QuickAttack qa = new QuickAttack();
+        SmallFire sf = new SmallFire();
+        QuickAttack qa = new QuickAttack();
         setType("water");
         setName("Squirtle");
         setHasEvolution(true);
@@ -80,24 +80,5 @@ public class Squirtle extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-	@Override
-	public String getAttack() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getAttackDamage() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void setAttackDamage(int newAttackDamage) {
-		// TODO Auto-generated method stub
-		
-	}
-
 
 }

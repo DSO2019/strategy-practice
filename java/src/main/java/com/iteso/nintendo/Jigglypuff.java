@@ -16,8 +16,8 @@ public class Jigglypuff extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Jigglypuff() {
-    	ImpactTrueno it = new ImpactTrueno();
-    	QuickAttack qa = new QuickAttack();
+        ImpactTrueno it = new ImpactTrueno();
+        QuickAttack qa = new QuickAttack();
         setType("fairy");
         setName("Jigglypuff");
         setHasEvolution(true);
@@ -46,18 +46,14 @@ public class Jigglypuff extends PokemonCharacter {
 
         setHitPoints(newHP);
         return defendMessage;
-
     }
 
     @Override
     public final String secondAttack() {
-
         String attackMessage = new String("Attacking opponent with "
                 + getSecondAttack()
                 + " causing a damage of " + getSecondAttackDamage());
         return attackMessage;
-
-
     }
 
     @Override
@@ -66,7 +62,6 @@ public class Jigglypuff extends PokemonCharacter {
                 + getMainAttack()
                 + " causing a damage of " + getMainAttackDamage());
         return attackMessage;
-
     }
 
     @Override
@@ -80,23 +75,5 @@ public class Jigglypuff extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-	@Override
-	public String getAttack() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getAttackDamage() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void setAttackDamage(int newAttackDamage) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }

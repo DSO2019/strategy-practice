@@ -1,33 +1,33 @@
 package com.iteso.nintendo;
 /**
- * Impact Trueno attack class
+ * Impact Trueno attack class.
  */
-public class ImpactTrueno implements IAttack{
-	/***
-	 * Attack name
-	 */
-	private String attack;
-	private int attackDamage;
-	
+public class ImpactTrueno implements IAttack {
     /**
-     * @return Name of the attack
+     * Attack name.
      */
-    public String getAttack(){
+    private String attack;
+    /**
+     * Attack Damage.
+     */
+    private int attackDamage;
+    /**
+     * @return Name of the attack.
+     */
+    public String getAttack() {
         return attack;
     }
-    
     /**
-     * @return value of the attack
+     * @return value of the attack.
      */
-    public int getAttackDamage(){
+    public int getAttackDamage() {
         return attackDamage;
     }
 
     /**
-     * Sets new AttackDamage
+     * @param newAttackDamage Sets new AttackDamage.
      */
-	public void setAttackDamage(int newAttackDamage) {
-		this.attackDamage = newAttackDamage;		
-	}
-    
+    public void setAttackDamage(final int newAttackDamage) {
+        this.attackDamage = newAttackDamage;
+    }
 }

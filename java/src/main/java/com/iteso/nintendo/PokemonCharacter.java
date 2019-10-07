@@ -128,7 +128,7 @@ public abstract class PokemonCharacter implements IAttack {
      * @param newMainAttack new main attack name.
      */
     public final void setMainAttack(final IAttack newMainAttack) {
-        this.mainAttack= newMainAttack;
+        this.mainAttack = newMainAttack;
     }
 
     /**

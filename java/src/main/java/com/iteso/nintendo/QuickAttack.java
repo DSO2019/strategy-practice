@@ -1,33 +1,33 @@
 package com.iteso.nintendo;
 /**
- * Quick attack class
+ * Quick Attack class.
  */
-public class QuickAttack implements IAttack{
-	/***
-	 * Attack name
-	 */
-	private String attack;
-	private int attackDamage;
-	
+public class QuickAttack implements IAttack {
     /**
-     * @return Name of the attack
+     * Attack name.
      */
-    public String getAttack(){
+    private String attack;
+    /**
+     * Attack Damage.
+     */
+    private int attackDamage;
+    /**
+     * @return Name of the attack.
+     */
+    public String getAttack() {
         return attack;
     }
-    
     /**
-     * @return value of the attack
+     * @return value of the attack.
      */
-    public int getAttackDamage(){
+    public int getAttackDamage() {
         return attackDamage;
     }
 
     /**
-     * Sets new AttackDamage
+     * @param newAttackDamage Sets new AttackDamage.
      */
-	public void setAttackDamage(int newAttackDamage) {
-		this.attackDamage = newAttackDamage;		
-	}
-    
+    public void setAttackDamage(final int newAttackDamage) {
+        this.attackDamage = newAttackDamage;
+    }
 }

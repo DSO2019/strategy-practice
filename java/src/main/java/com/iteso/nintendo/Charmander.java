@@ -16,8 +16,8 @@ public class Charmander extends PokemonCharacter {
      * Pikachu constructor.
      */
     public Charmander() {
-    	SmallFire sf = new SmallFire();
-    	BigFire bf = new BigFire();
+        SmallFire sf = new SmallFire();
+        BigFire bf = new BigFire();
         setType("fire");
         setName("Charmander");
         setHasEvolution(true);
@@ -80,24 +80,4 @@ public class Charmander extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-	@Override
-	public String getAttack() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int getAttackDamage() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void setAttackDamage(int newAttackDamage) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
 }

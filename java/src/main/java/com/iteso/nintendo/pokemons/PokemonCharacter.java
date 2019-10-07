@@ -103,7 +103,7 @@ public abstract class PokemonCharacter {
      * Indicate if pokemon can be evolved.
      * @return true or false.
      */
-    public final boolean isHasEvolution() {
+    public final boolean hasEvolution() {
         return hasEvolution;
     }
 

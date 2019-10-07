@@ -2,7 +2,7 @@ package com.iteso.nintendo.behaviors;
 
 public class SmallFireBehavior implements AttackBehavior {
     int attackDamage = 3;
-    String attackName = "Small fire";
+    String attackName = "Small Fire";
     /**
      * @return the attackDamage
      */

@@ -3,7 +3,7 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Alakazam extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -22,18 +22,19 @@ public class Pikachu extends PokemonCharacter {
     public static final int SECOND_ATTACK_DAMAGE = 15;
 
     /**
-     * Pikachu constructor.
+     * Alakazam constructor.
      */
-    public Pikachu() {
+    public Alakazam() {
+        Psychic psychic = new Psychic();
         Thunderpunch thunderpunch = new Thunderpunch();
-        setType("electric");
-        setName("Pikachu");
+        setType("Psiquic");
+        setName("Alakazam");
         setHasEvolution(true);
         setSecondAttack(thunderpunch.pokeAttack());
-        setMainAttack("Quick Attack");
+        setMainAttack(psychic.pokeAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
+        setMainAttackDamage(psychic.Power());
         setSecondAttackDamage(thunderpunch.Power());
     }
 

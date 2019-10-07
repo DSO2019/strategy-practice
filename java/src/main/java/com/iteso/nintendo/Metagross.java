@@ -3,38 +3,31 @@ package com.iteso.nintendo;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class Pikachu extends PokemonCharacter {
+public class Metagross extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
-    public static final int HIT_POINTS = 100;
+    public static final int HIT_POINTS = 77;
     /**
      * Defense multiplier value between 0-1.
      */
-    public static final double DEFENSE_MULTIPLIER = 0.4;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Metagross constructor.
      */
-    public Pikachu() {
-        Thunderpunch thunderpunch = new Thunderpunch();
-        setType("electric");
-        setName("Pikachu");
+    public Metagross() {
+        MetalClaw metalClaw = new MetalClaw();
+        Psychic psychic = new Psychic();
+        setType("psychic steel");
+        setName("Metagross");
         setHasEvolution(true);
-        setSecondAttack(thunderpunch.pokeAttack());
-        setMainAttack("Quick Attack");
+        setMainAttack(metalClaw.pokeAttack());
+        setSecondAttack(psychic.pokeAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(thunderpunch.Power());
+        setMainAttackDamage(metalClaw.Power());
+        setSecondAttackDamage(psychic.Power());
     }
 
     @Override

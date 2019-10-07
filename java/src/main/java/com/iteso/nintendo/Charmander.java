@@ -12,28 +12,22 @@ public class Charmander extends PokemonCharacter {
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
-    /**
-     * Damage from 1 - 20.
-     */
-    public static final int MAIN_ATTACK_DAMAGE = 3;
-    /**
-     * Damage from 1 -25.
-     */
-    public static final int SECOND_ATTACK_DAMAGE = 17;
 
     /**
-     * Pikachu constructor.
+     * Charmander constructor.
      */
     public Charmander() {
+        Flamethrower flamethrower = new Flamethrower();
+        MetalClaw metalClaw = new MetalClaw();
         setType("fire");
         setName("Charmander");
         setHasEvolution(true);
-        setSecondAttack("Big fire");
-        setMainAttack("Small fire");
+        setMainAttack(flamethrower.pokeAttack());
+        setSecondAttack(metalClaw.pokeAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
-        setSecondAttackDamage(SECOND_ATTACK_DAMAGE);
+        setMainAttackDamage(flamethrower.Power());
+        setSecondAttackDamage(metalClaw.Power());
     }
 
     @Override

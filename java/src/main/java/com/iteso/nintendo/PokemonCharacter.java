@@ -160,7 +160,7 @@ public abstract class PokemonCharacter  {
      * @return main attack damage.
      */
     public final int getMainAttackDamage() {
-        return mainAttackDamage;
+        return mainAttacks.getAttackDMG();
     }
 
     /**

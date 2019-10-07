@@ -19,7 +19,7 @@ public class FirePunch implements Attacks {
      */
     @Override
     public String doAttack() {
-        return " ha usado" + ATTACKNAME;
+        return  ATTACKNAME;
     }
 
     /**
@@ -29,7 +29,7 @@ public class FirePunch implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 6;
+        return 8;
     }
 
     /**

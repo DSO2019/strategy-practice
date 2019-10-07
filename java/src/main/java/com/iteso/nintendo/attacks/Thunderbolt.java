@@ -17,7 +17,7 @@ public class Thunderbolt implements Attacks {
      */
     @Override
     public String doAttack() {
-        return " ha usado" + ATTACKNAME;
+        return  ATTACKNAME;
     }
 
     /**

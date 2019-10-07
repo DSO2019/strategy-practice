@@ -12,8 +12,6 @@ public class Charmander extends PokemonCharacter {
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
-    
-
     /**
      * Pikachu constructor.
      */
@@ -82,6 +80,4 @@ public class Charmander extends PokemonCharacter {
             setSecondAttackDamage(attackDamage);
         }
     }
-
-
 }

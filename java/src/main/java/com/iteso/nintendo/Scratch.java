@@ -1,17 +1,21 @@
 package com.iteso.nintendo;
+/**Ataque Scratch.*/
+public class Scratch implements Attack {
 
-public class Scratch implements Attack{
+    /**Nombre del ataque.*/
+    private final String name = "Ataque Scratch";
+    /**Daño del ataque.*/
+    private final int damage = 18;
 
-    private final String NAME = "Ataque Scratch";
-    private final int DAMAGE = 18;
-
+    /**@return Nombre del ataque.*/
     @Override
-    public String getAttackName(){
-        return this.NAME;
+    public String getAttackName() {
+        return this.name;
     }
 
+    /**@return Daño del ataque.*/
     @Override
-    public int getAttackDamage(){
-        return this.DAMAGE; 
+    public int getAttackDamage() {
+        return this.damage;
     }
 }

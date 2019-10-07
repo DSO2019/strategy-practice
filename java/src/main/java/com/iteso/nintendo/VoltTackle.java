@@ -1,17 +1,21 @@
 package com.iteso.nintendo;
+/**Ataque Volt Tackle.*/
+public class VoltTackle implements Attack {
 
-public class VoltTackle implements Attack{
+    /**Nombre del ataque.*/
+    private final String name = "Ataque VoltTackle";
+    /**Daño del ataque.*/
+    private final int damage = 23;
 
-    private final String NAME = "Ataque VoltTackle";
-    private final int DAMAGE = 23;
-
+    /**@return Nombre del ataque.*/
     @Override
-    public String getAttackName(){
-        return this.NAME;
+    public String getAttackName() {
+        return this.name;
     }
 
+    /**@return Daño del ataque.*/
     @Override
-    public int getAttackDamage(){
-        return this.DAMAGE; 
+    public int getAttackDamage() {
+        return this.damage;
     }
 }

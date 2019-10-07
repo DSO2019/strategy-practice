@@ -1,17 +1,21 @@
 package com.iteso.nintendo;
+/**Ataque Water Gun.*/
+public class WaterGun implements Attack {
 
-public class WaterGun implements Attack{
+    /**Nombre del ataque.*/
+    private final String name = "Ataque Water Gun";
+    /**Daño del ataque.*/
+    private final int damage = 25;
 
-    private final String NAME = "Ataque Water Gun";
-    private final int DAMAGE = 25;
-
+    /**@return Nombre del ataque.*/
     @Override
-    public String getAttackName(){
-        return this.NAME;
+    public String getAttackName() {
+        return this.name;
     }
 
+    /**@return Daño del ataque.*/
     @Override
-    public int getAttackDamage(){
-        return this.DAMAGE; 
+    public int getAttackDamage() {
+        return this.damage;
     }
 }

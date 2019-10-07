@@ -1,8 +1,10 @@
 package com.iteso.nintendo;
+/**Interfaz de ataque.*/
+public interface Attack {
 
-public interface Attack{
-
-    public String getAttackName();
-    public int getAttackDamage();
+    /**@return Nombre del ataque.*/
+    String getAttackName();
+    /**@return Daño del ataque.*/
+    int getAttackDamage();
 
 }

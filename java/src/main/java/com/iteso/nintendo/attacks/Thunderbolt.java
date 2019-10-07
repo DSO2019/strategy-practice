@@ -9,7 +9,7 @@ public class Thunderbolt implements Attack {
     /**
      * Thunderbolt attack starting damage.
      */
-    private static final int START_DAMAGE = 80;
+    private static final int START_DAMAGE = 90;
 
     /**
      * Thunderbolt attack damage.

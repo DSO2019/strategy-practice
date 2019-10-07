@@ -2,11 +2,18 @@ package com.iteso.nintendo.attacks;
 
 import com.iteso.nintendo.Attacks;
 
+/**
+ * Clase para QuickAtack.
+ */
 public class QuickAttack implements Attacks {
     /**
      * Attack name.
      */
     static final String ATTACKNAME = "QuickAttack";
+    /**
+     * Para evitar numeros magicos.
+     */
+    public static final int ATTACK_DMG = 7;
     /**
      * Attack dmg.
      */
@@ -29,14 +36,14 @@ public class QuickAttack implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 7;
+        return ATTACK_DMG;
     }
 
     /**
-     * Set DMG from attack
+     * Set DMG from attack.
      */
     @Override
-    public void setAttackDMG(int dmg) {
+    public void setAttackDMG(final int dmg) {
         this.attDmg = dmg;
     }
 }

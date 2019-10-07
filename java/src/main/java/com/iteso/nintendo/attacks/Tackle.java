@@ -1,16 +1,23 @@
 package com.iteso.nintendo.attacks;
 
 import com.iteso.nintendo.Attacks;
-
+/**
+ * Clase para Tackle.
+ */
 public class Tackle implements Attacks {
     /**
      * Attack name.
      */
     static final String ATTACKNAME = "Tackle";
     /**
+     * Para evitar numeros magicos.
+     */
+    public static final int ATTACK_DMG = 6;
+    /**
      * Attack dmg.
      */
     private static int attDmg;
+
     /**
      * Do an attack.
      *
@@ -18,7 +25,7 @@ public class Tackle implements Attacks {
      */
     @Override
     public String doAttack() {
-        return ATTACKNAME;
+        return  ATTACKNAME;
     }
 
     /**
@@ -28,14 +35,14 @@ public class Tackle implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 6;
+        return ATTACK_DMG;
     }
 
     /**
-     * Set DMG from attack
+     * Set DMG from attack.
      */
     @Override
-    public void setAttackDMG(int dmg) {
+    public void setAttackDMG(final int dmg) {
         this.attDmg = dmg;
     }
 }

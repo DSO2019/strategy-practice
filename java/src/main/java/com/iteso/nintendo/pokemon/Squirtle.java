@@ -4,8 +4,10 @@ import com.iteso.nintendo.Attacks;
 import com.iteso.nintendo.PokemonCharacter;
 import com.iteso.nintendo.attacks.Splash;
 import com.iteso.nintendo.attacks.Tackle;
-import com.iteso.nintendo.attacks.Thunderbolt;
 
+/**
+ * Created by Erick Cardona.
+ */
 public class Squirtle extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.

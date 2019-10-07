@@ -3,7 +3,6 @@ package com.iteso.nintendo.pokemon;
 import com.iteso.nintendo.Attacks;
 import com.iteso.nintendo.PokemonCharacter;
 import com.iteso.nintendo.attacks.FirePunch;
-import com.iteso.nintendo.attacks.QuickAttack;
 import com.iteso.nintendo.attacks.Tackle;
 
 /**

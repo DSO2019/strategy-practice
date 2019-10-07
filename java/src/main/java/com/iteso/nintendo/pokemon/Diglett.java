@@ -5,6 +5,9 @@ import com.iteso.nintendo.PokemonCharacter;
 import com.iteso.nintendo.attacks.QuickAttack;
 import com.iteso.nintendo.attacks.Tackle;
 
+/**
+ * Created by Erick Cardona.
+ */
 public class Diglett extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.

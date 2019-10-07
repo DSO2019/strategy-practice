@@ -1,7 +1,7 @@
 package com.iteso.nintendo;
 
 /***
- * Interfaz para hacer llamar todos los ataques
+ * Interfaz para hacer llamar todos los ataques.
  */
 public interface Attacks {
     /**
@@ -17,7 +17,8 @@ public interface Attacks {
     int getAttackDMG();
 
     /**
-     * Set DMG from attack
+     * Set DMG from attack.
+     * @param dmg para actualizar el daño.
      */
     void setAttackDMG(int dmg);
 

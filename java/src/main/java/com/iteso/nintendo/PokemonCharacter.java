@@ -5,11 +5,11 @@ package com.iteso.nintendo;
  */
 public abstract class PokemonCharacter  {
     /**
-     * Pokemon main attack
+     * Pokemon main attack.
      */
     private Attacks mainAttacks;
     /**
-     * Pokemon second attack
+     * Pokemon second attack.
      */
     private Attacks secondAttacks;
     /**

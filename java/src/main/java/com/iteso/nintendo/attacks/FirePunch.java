@@ -2,7 +2,14 @@ package com.iteso.nintendo.attacks;
 
 import com.iteso.nintendo.Attacks;
 
+/**
+ * Clase para Firepunch.
+ */
 public class FirePunch implements Attacks {
+    /**
+     * Para evitar numeros magicos.
+     */
+    public static final int ATTACK_DMG = 8;
     /**
      * Attack name.
      */
@@ -29,14 +36,14 @@ public class FirePunch implements Attacks {
      */
     @Override
     public int getAttackDMG() {
-        return 8;
+        return ATTACK_DMG;
     }
 
     /**
-     * Set DMG from attack
+     * Set DMG from attack.
      */
     @Override
-    public void setAttackDMG(int dmg) {
+    public void setAttackDMG(final int dmg) {
         this.attDmg = dmg;
     }
 }

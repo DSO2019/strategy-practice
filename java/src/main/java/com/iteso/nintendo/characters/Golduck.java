@@ -4,9 +4,12 @@ import com.iteso.nintendo.behaviors.attack.BigFireAttack;
 import com.iteso.nintendo.behaviors.attack.AquaJet;
 import com.iteso.nintendo.behaviors.attack.Attack;
 
+/**
+ * Pokemon Golduck.
+ */
 public class Golduck extends PokemonCharacter {
 
-      /**
+    /**
      * Hit Points are the maximum life of pokemon.
      */
     public static final int HIT_POINTS = 77;
@@ -66,5 +69,4 @@ public class Golduck extends PokemonCharacter {
             setSecondAttack(newAttack);
         }
     }
-
 }

@@ -4,8 +4,11 @@ import com.iteso.nintendo.behaviors.attack.BigFireAttack;
 import com.iteso.nintendo.behaviors.attack.SmallFireAttack;
 import com.iteso.nintendo.behaviors.attack.Attack;
 
+/**
+ * Created by rvillalobos on 2/24/18.
+ */
 public class Bulbasur extends PokemonCharacter {
-        /**
+    /**
      * Hit Points are the maximum life of pokemon.
      */
     public static final int HIT_POINTS = 77;

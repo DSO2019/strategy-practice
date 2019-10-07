@@ -18,7 +18,7 @@ public class Charmander extends PokemonCharacter {
     public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Charmander constructor.
      */
     public Charmander() {
         setType("fire");

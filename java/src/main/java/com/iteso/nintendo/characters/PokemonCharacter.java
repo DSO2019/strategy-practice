@@ -10,7 +10,7 @@ public abstract class PokemonCharacter {
     /**
      * Pokemon name.
      */
-      private String name = null;
+    private String name = null;
     /**
      * Pokemon type.
      */
@@ -18,7 +18,7 @@ public abstract class PokemonCharacter {
     /**
      * Indicator of evolution.
      */
-      private boolean hasEvolution = false;
+    private boolean hasEvolution = false;
 
     /**
      * Multiplier to calculate damage received.
@@ -27,14 +27,12 @@ public abstract class PokemonCharacter {
     /**
      * Pokemon life.
      */
-      private int hitPoints = 0;
-    
-    /* Main attack */
+    private int hitPoints = 0;
 
+    /**Main attack. */
      private Attack mainAttack;
-     
-     /* Second attack */
 
+     /**Second attack. */
      private Attack secondAttack;
 
     /**
@@ -81,8 +79,7 @@ public abstract class PokemonCharacter {
     /**
      * Method to change pokemon attack.
      * @param attack Which attack to change.
-     * @param attackDamage New damage.
-     * @param newAttack New attack name.
+     * @param newAttack New attack.
      */
     public abstract void setNewAttack(int attack, Attack newAttack);
 

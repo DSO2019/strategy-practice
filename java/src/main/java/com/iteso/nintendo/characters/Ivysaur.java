@@ -4,6 +4,9 @@ import com.iteso.nintendo.behaviors.attack.BigFireAttack;
 import com.iteso.nintendo.behaviors.attack.SmallFireAttack;
 import com.iteso.nintendo.behaviors.attack.Attack;
 
+/**
+ * Pokemon Ivysaur.
+ */
 public class Ivysaur extends PokemonCharacter {
       /**
      * Hit Points are the maximum life of pokemon.
@@ -15,7 +18,7 @@ public class Ivysaur extends PokemonCharacter {
     public static final double DEFENSE_MULTIPLIER = 0.3;
 
     /**
-     * Pikachu constructor.
+     * Ivysaur constructor.
      */
     public Ivysaur() {
         setType("veneno");

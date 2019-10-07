@@ -4,6 +4,9 @@ import com.iteso.nintendo.behaviors.attack.BigFireAttack;
 import com.iteso.nintendo.behaviors.attack.SmallFireAttack;
 import com.iteso.nintendo.behaviors.attack.Attack;
 
+/**
+ * Pokemon Squirtle.
+ */
 public class Squirtle extends PokemonCharacter {
        /**
      * Hit Points are the maximum life of pokemon.

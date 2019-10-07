@@ -23,7 +23,7 @@ public class Bulbasur extends PokemonCharacter {
     public Bulbasur() {
         setType("planta");
         setName("Bulbasur");
-        setHasEvolution(true);
+        setHasEvolution(false);
         setSecondAttack(new BigFireAttack());
         setMainAttack(new SmallFireAttack());
         setHitPoints(HIT_POINTS);

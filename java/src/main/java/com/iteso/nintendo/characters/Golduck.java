@@ -1,7 +1,7 @@
 package com.iteso.nintendo.characters;
 
 import com.iteso.nintendo.behaviors.attack.BigFireAttack;
-import com.iteso.nintendo.behaviors.attack.AquaJet;
+import com.iteso.nintendo.behaviors.attack.AquaJetAttack;
 import com.iteso.nintendo.behaviors.attack.Attack;
 
 /**
@@ -26,7 +26,7 @@ public class Golduck extends PokemonCharacter {
         setName("Golduck");
         setHasEvolution(true);
         setSecondAttack(new BigFireAttack());
-        setMainAttack(new AquaJet());
+        setMainAttack(new AquaJetAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
     }

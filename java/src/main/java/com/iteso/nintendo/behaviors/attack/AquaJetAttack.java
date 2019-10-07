@@ -3,14 +3,14 @@ package com.iteso.nintendo.behaviors.attack;
 /**
     Ataque de agua AquaJet.
  */
-public class AquaJet implements Attack {
+public class AquaJetAttack implements Attack {
 
     /** Default damage. */
-    private static final int DEFAULT_ATTACK_DAMAGE = 5;
+    private static final int DEFAULT_ATTACK_DAMAGE = 18;
      /** Daño ocasionado por el ataque. */
     private int attackDamage = DEFAULT_ATTACK_DAMAGE;
     /** Nombre del ataque. */
-    private String attackName = "Quick Attack";
+    private String attackName = "Aqua Jet";
 
     /**
         Método que lleva a cabo el ataque.

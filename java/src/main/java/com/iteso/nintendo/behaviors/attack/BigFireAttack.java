@@ -10,7 +10,7 @@ public class BigFireAttack implements Attack {
      /** Daño ocasionado por el ataque. */
     private int attackDamage = DEFAULT_ATTACK_DAMAGE;
     /** Nombre del ataque. */
-    private String attackName = "Quick Attack";
+    private String attackName = "Big Fire";
 
     /**
         Método que lleva a cabo el ataque.

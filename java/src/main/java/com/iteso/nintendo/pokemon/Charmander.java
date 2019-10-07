@@ -101,6 +101,7 @@ public class Charmander extends PokemonCharacter {
             setSecondAttack(newAttack);
             setSecondAttackDamage(attackDamage);
         }
+
     }
 
 

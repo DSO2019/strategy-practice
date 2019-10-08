@@ -1,7 +1,8 @@
 import abc
 
+
 class Attack:
-    
+
     def performAttack(self):
         pass
 

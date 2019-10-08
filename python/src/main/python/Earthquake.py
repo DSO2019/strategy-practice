@@ -1,8 +1,9 @@
 from Attack import *
 
+
 class Earthquake(Attack):
 
-    def __init__(self, damage = 80):
+    def __init__(self, damage=80):
         self.damage = damage
 
     def performAttack(self):

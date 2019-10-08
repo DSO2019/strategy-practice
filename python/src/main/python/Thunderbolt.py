@@ -1,8 +1,9 @@
 from Attack import *
 
+
 class Thunderbolt(Attack):
 
-    def __init__(self, damage = 90):
+    def __init__(self, damage=90):
         self.damage = damage
 
     def performAttack(self):

@@ -21,7 +21,7 @@ class Rotom(PokemonCharacter):
 
     def evolve(self):
         return None
-    
+
     def defend(self, attack):
         damage = attack * self.getDefenseMultiplier()
         newHP = self.getHitPoints() - damage

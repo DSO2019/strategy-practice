@@ -1,5 +1,6 @@
 import abc
 
+
 class PokemonCharacter():
 
     def __init__(self):
@@ -19,16 +20,16 @@ class PokemonCharacter():
 
     def evolve(self):
         pass
-    
+
     def defend(self, attackDamage):
         pass
-    
+
     def secondAttack(self):
         pass
 
     def mainAttack(self):
         pass
-    
+
     def setNewAttack(self, attack, attackDamage, newAttack):
         pass
 
@@ -49,7 +50,7 @@ class PokemonCharacter():
 
     def setMainAttack(self, newMainAttack):
         self.mainAttack = newMainAttack
-    
+
     def getSecondAttack(self):
         return self.secondAttack.performAttack()
 
@@ -67,7 +68,7 @@ class PokemonCharacter():
 
     def setSecondAttackDamage(self, newSecondAttackDamage):
         self.secondAttack.setAttackDamage(newSecondAttackDamage)
-    
+
     def getDefenseMultiplier(self):
         return self.deffenceMultiplier
 
@@ -76,6 +77,6 @@ class PokemonCharacter():
 
     def getHitPoints(self):
         return self.hitPoints
-    
+
     def setHitPoints(self, newHitPoints):
         self.hitPoints = newHitPoints

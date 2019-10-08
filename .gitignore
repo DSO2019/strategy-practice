@@ -7,3 +7,4 @@ target/
 .project
 *.libraries
 .DS_Store
+*.pyc

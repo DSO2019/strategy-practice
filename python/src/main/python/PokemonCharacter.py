@@ -53,7 +53,7 @@ class PokemonCharacter():
     def getSecondAttack(self):
         return self.secondAttack.performAttack()
 
-    def setSecondAttack(sel, newSecondAttack):
+    def setSecondAttack(self, newSecondAttack):
         self.secondAttack = newSecondAttack
 
     def getMainAttackDamage(self):

@@ -11,6 +11,7 @@ class Pikachu(PokemonCharacter):
         self.surf = Surf()
         self.setType('electric')
         self.setName('Pikachu')
+        self.setHasEvolution(True)
         self.setMainAttack(self.thunderbolt)
         self.setSecondAttack(self.surf)
         self.setHitPoints(self.HIT_POINTS)
@@ -23,26 +24,26 @@ class Pikachu(PokemonCharacter):
     
     def defend(self, attack):
         damage = attack * self.getDefenseMultiplier()
-        newHP = self.getHitPoints - damage
+        newHP = self.getHitPoints() - damage
         defendMessage = 'Defending attack, damage caused is '
-        defendMessage += damage
+        defendMessage += str(int(damage))
         defendMessage += ' new HP is '
-        defendMessage += newHP
-        self.setHitPoints(newHitPoints)
+        defendMessage += str(int(newHP))
+        self.setHitPoints(int(newHP))
         return defendMessage
 
-    def secondAttack(self):
+    def performSecondAttack(self):
         attackMessage = 'Attacking opponent with '
         attackMessage += self.getSecondAttack()
         attackMessage += ' causing a damage of '
-        attackMessage += self.getSecondAttackDamage()
+        attackMessage += str(self.getSecondAttackDamage())
         return attackMessage
 
-    def mainAttack(self):
+    def performMainAttack(self):
         attackMessage = 'Attacking opponent with '
         attackMessage += self.getMainAttack()
         attackMessage += ' causing a damage of '
-        attackMessage += self.getMainAttackDamageS()
+        attackMessage += str(self.getMainAttackDamage())
         return attackMessage
 
     def setNewAttack(self, attack, attackDamage, newAttack):

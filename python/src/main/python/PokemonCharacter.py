@@ -4,15 +4,21 @@ class PokemonCharacter ():
         self.name = None
         self.type = None
         self.hasEvolution = False
-        self.defenseMultiplier = 0
-        self.hitPoints = 0
         self.mainAttack = None
         self.secondAttack = None
+        self.defenseMultiplier = 0
+        self.hitPoints = 0
+        
+    def getMainAttackBehavior():
+        return self.mainAttack
 
-    def setMainAttackBehavior(AttackBehavior ab):
+    def getSecondAttackBehavior():
+        return self.secondAttack
+
+    def setMainAttackBehavior(self, ab):
         self.mainAttack = ab
 
-    def setSecondaryAttackBehavior(AttackBehavior ab2):
+    def setSecondaryAttackBehavior(self, ab2):
         self.secondAttack = ab2
 
     def getName(self):
@@ -27,14 +33,14 @@ class PokemonCharacter ():
     def defend(self, attackDamage):
         pass
 
-    def getType(self):
-        return self.type
-
     def secondAttack(self):
         pass
 
     def mainAttack(self):
         pass
+
+    def getType(self):
+        return self.type
 
     def setNewAttack(self, attack, newAttack):
         pass
@@ -48,18 +54,12 @@ class PokemonCharacter ():
     def setHasEvolution(self, evolution):
         self.hasEvolution = evolution
 
-    #######
+    ################
     def getMainAttack(self):
         return self.mainAttack.getAttack()
 
-    def setMainAttack(self, newMainAttack):
-        self.mainAttack = newMainAttack
-
     def getSecondAttack(self):
         return self.secondAttack.getAttack()
-
-    def setSecondAttack(self, newSecondAttack):
-        self.secondAttack = newSecondAttack
 
     def getMainAttackDamage(self):
         return self.mainAttack.getAttackDamage()
@@ -71,8 +71,8 @@ class PokemonCharacter ():
         return self.secondAttack.getAttackDamage()
 
     def setSecondAttackDamage(self, newSecondAttackDamage):
-         self.secondAttack.setAttackDamage(newSecondAttackDamage)
-
+        self.secondAttack.setAttackDamage(newSecondAttackDamage)
+    ################
     def getDefenseMultiplier(self):
         return self.defenseMultiplier
 

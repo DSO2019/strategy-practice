@@ -1,18 +1,18 @@
 from PokemonCharacter import *
 from QuickAttackBehavior import *
-from ImpactruenoBehavior import *
+from SmallFireBehavior import *
 
 
-class Pikachu(PokemonCharacter):
+class Lucario(PokemonCharacter):
     def __init__(self):
-        self.HIT_POINTS = 100
-        self.DEFENSE_MULTIPLIER = 0.4
+        self.HIT_POINTS = 77
+        self.DEFENSE_MULTIPLIER = 0.3
         self.QuickAttackBehavior = QuickAttackBehavior()
-        self.ImpactruenoBehavior = ImpactruenoBehavior()
-        self.setType("electric")
-        self.setName("Pikachu")
-        self.setSecondaryAttackBehavior(self.ImpactruenoBehavior)
-        self.setMainAttackBehavior(self.QuickAttackBehavior)
+        self.SmallFireBehavior = SmallFireBehavior()
+        self.setType("fighter")
+        self.setName("Lucario")
+        self.setSecondaryAttackBehavior(self.QuickAttackBehavior)
+        self.setMainAttackBehavior(self.SmallFireBehavior)
         self.setHasEvolution(True)
         self.setHitPoints(self.HIT_POINTS)
         self.setDefenseMultiplier(self.DEFENSE_MULTIPLIER)

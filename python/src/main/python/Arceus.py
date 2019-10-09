@@ -1,18 +1,18 @@
 from PokemonCharacter import *
-from QuickAttackBehavior import *
-from ImpactruenoBehavior import *
+from CosmicPowerBehavior import *
+from BigFireBehavior import *
 
 
-class Pikachu(PokemonCharacter):
+class Arceus(PokemonCharacter):
     def __init__(self):
-        self.HIT_POINTS = 100
-        self.DEFENSE_MULTIPLIER = 0.4
-        self.QuickAttackBehavior = QuickAttackBehavior()
-        self.ImpactruenoBehavior = ImpactruenoBehavior()
-        self.setType("electric")
-        self.setName("Pikachu")
-        self.setSecondaryAttackBehavior(self.ImpactruenoBehavior)
-        self.setMainAttackBehavior(self.QuickAttackBehavior)
+        self.HIT_POINTS = 120
+        self.DEFENSE_MULTIPLIER = 0.7
+        self.CosmicPowerBehavior = CosmicPowerBehavior()
+        self.BigFireBehavior = BigFireBehavior()
+        self.setType("normal")
+        self.setName("Arceus")
+        self.setSecondaryAttackBehavior(self.CosmicPowerBehavior)
+        self.setMainAttackBehavior(self.BigFireBehavior)
         self.setHasEvolution(True)
         self.setHitPoints(self.HIT_POINTS)
         self.setDefenseMultiplier(self.DEFENSE_MULTIPLIER)

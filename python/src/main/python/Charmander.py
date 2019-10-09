@@ -1,18 +1,18 @@
 from PokemonCharacter import *
-from QuickAttackBehavior import *
-from ImpactruenoBehavior import *
+from BigFireBehavior import *
+from SmallFireBehavior import *
 
 
-class Pikachu(PokemonCharacter):
+class Charmander(PokemonCharacter):
     def __init__(self):
-        self.HIT_POINTS = 100
-        self.DEFENSE_MULTIPLIER = 0.4
-        self.QuickAttackBehavior = QuickAttackBehavior()
-        self.ImpactruenoBehavior = ImpactruenoBehavior()
-        self.setType("electric")
-        self.setName("Pikachu")
-        self.setSecondaryAttackBehavior(self.ImpactruenoBehavior)
-        self.setMainAttackBehavior(self.QuickAttackBehavior)
+        self.HIT_POINTS = 77
+        self.DEFENSE_MULTIPLIER = 0.3
+        self.BigFireBehavior = BigFireBehavior()
+        self.SmallFireBehavior = SmallFireBehavior()
+        self.setType("fire")
+        self.setName("Charmander")
+        self.setSecondaryAttackBehavior(self.BigFireBehavior)
+        self.setMainAttackBehavior(self.SmallFireBehavior)
         self.setHasEvolution(True)
         self.setHitPoints(self.HIT_POINTS)
         self.setDefenseMultiplier(self.DEFENSE_MULTIPLIER)

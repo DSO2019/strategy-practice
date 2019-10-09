@@ -7,17 +7,17 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
+public class JigglypuffTest {
     /**
-     * Pikachu object.
+     * Jigglypuff object.
      */
-    Pikachu pikachu;
+    Jigglypuff jigglypuff;
     /**
      * Set up for the character.
      */
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        jigglypuff = new Jigglypuff();
     }
     /**
      * Test of the mainAttack;

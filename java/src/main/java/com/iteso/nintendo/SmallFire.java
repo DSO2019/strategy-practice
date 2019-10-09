@@ -4,13 +4,17 @@ package com.iteso.nintendo;
  */
 public class SmallFire implements IAttack {
     /**
+     * Attack Damage value.
+     */
+    private static final int INITIAL_AD = 20;
+    /**
      * Attack name.
      */
-    private String attack;
+    private String attack = "Small Fire";
     /**
      * Attack Damage.
      */
-    private int attackDamage;
+    private int attackDamage = INITIAL_AD;
     /**
      * @return Name of the attack.
      */

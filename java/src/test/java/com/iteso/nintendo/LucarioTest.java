@@ -7,30 +7,30 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
+public class LucarioTest {
     /**
-     * Pikachu object.
+     * Lucario object.
      */
-    Pikachu pikachu;
+    Lucario lucario;
     /**
      * Set up for the character.
      */
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        lucario = new Lucario();
     }
     /**
      * Test of the mainAttack;
      */
     @Test
     public void mainAttack(){
-        assertEquals("Attacking opponent with Quick Attack causing damage of 30", pikachu.mainAttack());
+        assertEquals("Attacking opponent with Small Fire causing damage of 20", lucario.mainAttack());
     }
     /**
      * Test of the secondAttack;
      */
     @Test
     public void secondAttack(){
-        assertEquals("Attacking opponent with Impact Trueno causing damage of 20", pikachu.mainAttack());
+        assertEquals("Attacking opponent with Big Fire causing damage of 30", lucario.mainAttack());
     }
 }

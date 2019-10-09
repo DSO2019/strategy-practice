@@ -73,7 +73,7 @@ class PokemonCharacter ():
         return self.secondAttack.getAttackDamage()
 
     def setSecondAttackDamage(self, newSecondAttackDamage):
-         self.secondAttack.setAttackDamage(newSecondAttackDamage)
+        self.secondAttack.setAttackDamage(newSecondAttackDamage)
 
     def getDefenseMultiplier(self):
         return self.defenseMultiplier

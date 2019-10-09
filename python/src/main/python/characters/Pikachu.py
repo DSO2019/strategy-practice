@@ -2,12 +2,13 @@ from behaviors.attack.QuickAttack import QuickAttack
 from behaviors.attack.ImpactTruenoAttack import ImpactTruenoAttack
 from characters.PokemonCharacter import PokemonCharacter
 
+
 class Pikachu(PokemonCharacter):
-    
+
     def __init__(self):
         self.HIT_POINTS = 100
         self.DEFENSE_MULTIPLIER = 0.4
-        
+
         self.setType("electric")
         self.setName("Pikachu")
         self.setHasEvolution(True)

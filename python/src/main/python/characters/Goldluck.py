@@ -2,12 +2,13 @@ from behaviors.attack.BigFireAttack import BigFireAttack
 from behaviors.attack.AquaJetAttack import AquaJetAttack
 from characters.PokemonCharacter import PokemonCharacter
 
+
 class Goldluck(PokemonCharacter):
-    
+
     def __init__(self):
         self.HIT_POINTS = 77
         self.DEFENSE_MULTIPLIER = 0.3
-        
+
         self.setType("agua")
         self.setName("Goldluck")
         self.setHasEvolution(True)

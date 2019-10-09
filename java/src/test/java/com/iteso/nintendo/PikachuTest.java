@@ -12,7 +12,7 @@ public class PikachuTest {
      * Pikachu object.
      */
     Pikachu pikachu;
-    /**
+    /**main
      * Set up for the character.
      */
     @Before

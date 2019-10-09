@@ -50,6 +50,16 @@ public class Pikachu extends PokemonCharacter {
 
     }
 
+        @Override
+    public final String secondAttack() {
+        return getSecondAttack().attack();
+    }
+
+    @Override
+    public final String mainAttack() {
+        return getMainAttack().attack();
+    }
+
     @Override
     public final void setNewAttack(final int attack, final Attack newAttack) {
         if (attack == 1) {
@@ -59,14 +69,6 @@ public class Pikachu extends PokemonCharacter {
         }
     }
 
-    @Override
-    public final String secondAttack() {
-        return getSecondAttack().attack();
-    }
 
-    @Override
-    public final String mainAttack() {
-        return getMainAttack().attack();
-    }
 
 }

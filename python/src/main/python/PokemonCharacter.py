@@ -8,7 +8,7 @@ class PokemonCharacter ():
         self.secondAttack = None
         self.defenseMultiplier = 0
         self.hitPoints = 0
-        
+
     def getMainAttackBehavior():
         return self.mainAttack
 
@@ -73,6 +73,7 @@ class PokemonCharacter ():
     def setSecondAttackDamage(self, newSecondAttackDamage):
         self.secondAttack.setAttackDamage(newSecondAttackDamage)
     ################
+
     def getDefenseMultiplier(self):
         return self.defenseMultiplier
 

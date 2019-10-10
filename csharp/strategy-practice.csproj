@@ -34,8 +34,18 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Clases\" />
+    <Compile Include="Clases\Mewtwo.cs" />
+    <Compile Include="Clases\Goldeen.cs" />
+    <Compile Include="Clases\Attacks\Hadouken.cs" />
+    <Compile Include="Clases\Attacks\Tackle.cs" />
+    <Compile Include="Clases\Alakazam.cs" />
+    <Compile Include="Clases\Charmander.cs" />
+    <Compile Include="Clases\Pikachu.cs" />
+    <Compile Include="Clases\PokemonCharacter.cs" />
+    <Compile Include="Clases\Squirtle.cs" />
+    <Compile Include="IAttack.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

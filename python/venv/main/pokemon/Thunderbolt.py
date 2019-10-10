@@ -1,7 +1,7 @@
-from Attacks import *
+from main.pokemon.Attacks import *
 
 #   Clase de ataque
-class Tackle(IAttack):
+class Tackle(Attacks):
 
     def doAttack(self):
         attackName = "Thunderbolt"

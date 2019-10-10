@@ -8,8 +8,6 @@ class PokemonCharacter ():
         self.hasEvolution = False
         self.mainAttack = None
         self.secondAttack = None
-        self.mainAttackDamage = 0
-        self.secondAttackDamage = 0
         self.defenseMultiplier = 0
         self.hitPoints = 0
 
@@ -18,7 +16,7 @@ class PokemonCharacter ():
         return self.name
 
     # Set name.
-    def setName(self, arg):
+    def setName(self, newName):
         self.name = arg
 
     #Evolve?.

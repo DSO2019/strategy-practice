@@ -1,6 +1,6 @@
-from PokemonCharacter import *
-from Splash import *
-from Tackle import *
+from main.pokemon.PokemonCharacter import *
+from main.pokemon.Splash import *
+from main.pokemon.Tackle import *
 
 #   Clase Pikachu
 class Charmander(PokemonCharacter):

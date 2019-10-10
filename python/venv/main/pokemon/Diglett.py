@@ -1,6 +1,6 @@
-from PokemonCharacter import *
-from QuickAttack import *
-from Tackle import *
+from main.pokemon.PokemonCharacter import *
+from main.pokemon.QuickAttack import *
+from main.pokemon.Tackle import *
 
 #   Clase Diglett
 class Charmander(PokemonCharacter):

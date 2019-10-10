@@ -1,6 +1,6 @@
-from PokemonCharacter import *
-from Firepunch import *
-from Tackle import *
+from main.pokemon.PokemonCharacter import *
+from main.pokemon.QuickAttack import *
+from main.pokemon.Tackle import *
 
 #   Clase Ekans
 class Charmander(PokemonCharacter):

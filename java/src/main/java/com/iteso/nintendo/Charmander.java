@@ -88,5 +88,14 @@ public class Charmander extends PokemonCharacter {
         }
     }
 
+    @Override
+    public void primaryAttack(String attackName, int attackDamage) {
+        setMainAttack(attackName);
+        setMainAttackDamage(attackDamage);
+    }
 
+    @Override
+    public void secondaryAttack(String attackName, int attackDamage) {
+
+    }
 }

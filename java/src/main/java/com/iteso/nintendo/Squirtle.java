@@ -1,12 +1,10 @@
 package com.iteso.nintendo;
 
 import com.iteso.nintendo.attacks.AtaqueRapido;
+import com.iteso.nintendo.attacks.Burbuja;
 import com.iteso.nintendo.attacks.Impactrueno;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Pikachu extends PokemonCharacter {
+public class Squirtle extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -28,12 +26,12 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
+    public Squirtle() {
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
         setSecondAttack(new AtaqueRapido());
-        setMainAttack(new Impactrueno());
+        setMainAttack(new Burbuja());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
         setMainAttackDamage(MAIN_ATTACK_DAMAGE);
@@ -101,5 +99,4 @@ public class Pikachu extends PokemonCharacter {
     public int attackDamage() {
         return 0;
     }
-
 }

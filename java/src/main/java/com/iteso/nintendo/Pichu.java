@@ -3,10 +3,7 @@ package com.iteso.nintendo;
 import com.iteso.nintendo.attacks.AtaqueRapido;
 import com.iteso.nintendo.attacks.Impactrueno;
 
-/**
- * Created by rvillalobos on 2/24/18.
- */
-public class Pikachu extends PokemonCharacter {
+public class Pichu extends PokemonCharacter {
     /**
      * Hit Points are the maximum life of pokemon.
      */
@@ -28,7 +25,7 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Pikachu constructor.
      */
-    public Pikachu() {
+    public Pichu() {
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);

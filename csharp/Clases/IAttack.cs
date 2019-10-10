@@ -2,7 +2,7 @@ namespace unittestpractice.Clases
 {
     public interface IAttack {
 
-        String GetAttackName();
+        string GetAttackName();
 
         int GetAttackDamage();
 

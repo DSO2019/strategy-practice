@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace unittestpractice.Clases
+﻿namespace unittestpractice.Clases
 {
     public abstract class PokemonCharacter
     {
@@ -12,90 +6,90 @@ namespace unittestpractice.Clases
         /**
          * Pokemon name.
          */
-        private String name = null;
+        private string _name;
 
         /**
          * Pokemon type.
          */
-        private String type = null;
+        private string _type;
 
         /**
          * Indicator of evolution.
          */
-        private bool hasEvolution = false;
+        private bool _hasEvolution;
 
         /**
          * Main attack name.
          */
-        private String mainAttack = null;
+        private string _mainAttack;
 
         /**
          * Second attack name.
          */
-        private String secondAttack = null;
+        private string _secondAttack;
 
         /**
          * Damage caused by main attack.
          */
-        private int mainAttackDamage = 0;
+        private int _mainAttackDamage;
 
         /**
          * Damage caused by second attack.
          */
-        private int secondAttackDamage = 0;
+        private int _secondAttackDamage;
 
         /**
          * Multiplier to calculate damage received.
          */
-        private double defenseMultiplier = 0;
+        private double _defenseMultiplier;
 
         /**
          * Pokemon life.
          */
-        private int hitPoints = 0;
+        private int _hitPoints;
 
         /**
          * Get pokemon name.
          * @return Name.
          */
-        public String getName()
+        public string GetName()
         {
-            return name;
+            return _name;
         }
 
         /**
          * Set pokemon name.
          * @param newName New name.
          */
-        public void setName(String newName)
+        protected void SetName(string newName)
         {
-            this.name = newName;
+            _name = newName;
         }
 
         /**
          * Method to perform evolution.
          * @return Result of evolution.
          */
-        public abstract String evolve();
+        public abstract string Evolve();
 
         /**
          * Method to defend an attack.
          * @param attackDamage Amount of damage to defend.
          * @return Result of defense.
          */
-        public abstract String defend(int attackDamage);
+        public abstract string Defend(int attackDamage);
 
         /**
          * Method to perform second attack.
          * @return Result of attack.
          */
-        public abstract String SecondAttack();
+        public abstract string SecondAttack();
 
         /**
          * Method to perform main attack.
          * @return Result of main attack.
          */
-        public abstract String MainAttack();
+        public abstract string MainAttack();
 
         /**
          * Method to change pokemon attack.
@@ -103,151 +97,153 @@ namespace unittestpractice.Clases
          * @param attackDamage New damage.
          * @param newAttack New attack name.
          */
-        public abstract void setNewAttack(int attack,
-            int attackDamage, String newAttack);
+        public abstract void SetNewAttack(int attack,
+            int attackDamage, string newAttack);
 
         /**
          * Pokemon type.
          * @return water, fire, normal, electric, plant, bug, etc.
          */
-        public String getType()
+/*
+        public string GetType()
         {
-            return type;
+            return _type;
         }
+*/
 
         /**
          * Set new pokemon type.
          * @param newType new pokemon type.
          */
-        public void setType(String newType)
+        protected void SetType(string newType)
         {
-            this.type = newType;
+            _type = newType;
         }
 
         /**
          * Indicate if pokemon can be evolved.
          * @return true or false.
          */
-        public bool isHasEvolution()
+        public bool IsHasEvolution()
         {
-            return hasEvolution;
+            return _hasEvolution;
         }
 
         /**
          * Set indicator of evolution.
          * @param evolution set to true if pokemon can be evolved.
          */
-        public void setHasEvolution(bool evolution)
+        protected void SetHasEvolution(bool evolution)
         {
-            this.hasEvolution = evolution;
+            _hasEvolution = evolution;
         }
 
         /**
          * Get name of main attack.
          * @return main attack name.
          */
-        public String getMainAttack()
+        protected string GetMainAttack()
         {
-            return mainAttack;
+            return _mainAttack;
         }
 
         /**
          * Set name of main attack.
          * @param newMainAttack new main attack name.
          */
-        public void setMainAttack(String newMainAttack)
+        protected void SetMainAttack(string newMainAttack)
         {
-            this.mainAttack = newMainAttack;
+            _mainAttack = newMainAttack;
         }
 
         /**
          * Get name of second attack.
          * @return name of second attack.
          */
-        public String getSecondAttack()
+        protected string GetSecondAttack()
         {
-            return secondAttack;
+            return _secondAttack;
         }
 
         /**
          * Set name of second attack.
          * @param newSecondAttack new second attack name.
          */
-        public void setSecondAttack(String newSecondAttack)
+        protected void SetSecondAttack(string newSecondAttack)
         {
-            this.secondAttack = newSecondAttack;
+            _secondAttack = newSecondAttack;
         }
 
         /**
          * Get damage of main attack.
          * @return main attack damage.
          */
-        public int getMainAttackDamage()
+        protected int GetMainAttackDamage()
         {
-            return mainAttackDamage;
+            return _mainAttackDamage;
         }
 
         /**
          * Set main attack new damage.
          * @param newMainAttackDamage new main attack damage.
          */
-        public void setMainAttackDamage(int newMainAttackDamage)
+        protected void SetMainAttackDamage(int newMainAttackDamage)
         {
-            this.mainAttackDamage = newMainAttackDamage;
+            _mainAttackDamage = newMainAttackDamage;
         }
 
         /**
          * Get second attack damage.
          * @return second attack damage.
          */
-        public int getSecondAttackDamage()
+        protected int GetSecondAttackDamage()
         {
-            return secondAttackDamage;
+            return _secondAttackDamage;
         }
 
         /**
          * Set new second attack damage.
          * @param newSecondAttackDamage new second attack damage.
          */
-        public void setSecondAttackDamage(int newSecondAttackDamage)
+        protected void SetSecondAttackDamage(int newSecondAttackDamage)
         {
-            this.secondAttackDamage = newSecondAttackDamage;
+            _secondAttackDamage = newSecondAttackDamage;
         }
 
         /**
          * Get defense multiplier.
          * @return defense multiplier.
          */
-        public double getDefenseMultiplier()
+        protected double GetDefenseMultiplier()
         {
-            return defenseMultiplier;
+            return _defenseMultiplier;
         }
 
         /**
          * Set new defense mul;tiplier.
          * @param newDefenseMultiplier new defense multiplier.
          */
-        public void setDefenseMultiplier(double newDefenseMultiplier)
+        protected void SetDefenseMultiplier(double newDefenseMultiplier)
         {
-            this.defenseMultiplier = newDefenseMultiplier;
+            _defenseMultiplier = newDefenseMultiplier;
         }
 
         /**
          * Get hit points.
          * @return hit points.
          */
-        public int getHitPoints()
+        protected int GetHitPoints()
         {
-            return hitPoints;
+            return _hitPoints;
         }
 
         /**
          * Set new het points.
          * @param newHitPoints new hit points.
          */
-        public void setHitPoints(int newHitPoints)
+        protected void SetHitPoints(int newHitPoints)
         {
-            this.hitPoints = newHitPoints;
+            _hitPoints = newHitPoints;
         }
 
     }

@@ -4,13 +4,13 @@ namespace unittestpractice.Clases
     {
 
         /**Nombre del ataque.*/
-        private readonly String _name = "Ataque Surf";
+        private const string Name = "Ataque Surf";
         /**Daño del ataque.*/
         private const int Damage = 10;
 
-        public String GetAttackName()
+        public string GetAttackName()
         {
-            return _name;
+            return Name;
         }
 
         public int GetAttackDamage()

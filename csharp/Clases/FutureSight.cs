@@ -4,13 +4,14 @@
     {
 
         /**Nombre del ataque.*/
-        private readonly String _name = "Ataque Future Sight";
+        private const string Name = "Ataque Future Sight";
+
         /**Daño del ataque.*/
         private const int Damage = 22;
 
-        public String GetAttackName()
+        public string GetAttackName()
         {
-            return _name;
+            return Name;
         }
 
         public int GetAttackDamage()

@@ -16,7 +16,7 @@ public class Thunderpunch implements iAttack {
      *
      * @return the power of the attack damage.
      */
-    public final int Power() {
+    public int power() {
         final int power = 18;
         return power;
     }

@@ -17,7 +17,7 @@ public class MetalClaw implements iAttack {
      *
      * @return the power of the attack damage.
      */
-    public final int Power() {
+    public int power() {
         final int power = 12;
         return power;
     }

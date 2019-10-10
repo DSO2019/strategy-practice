@@ -15,7 +15,7 @@ public class Pikachu extends PokemonCharacter {
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
+    public static final int MAIN_ATTACK_DAMAGE = 12;
     /**
      * Damage from 1 -25.
      */
@@ -26,14 +26,15 @@ public class Pikachu extends PokemonCharacter {
      */
     public Pikachu() {
         Thunderpunch thunderpunch = new Thunderpunch();
+        MetalClaw metalclaw = new MetalClaw();
         setType("electric");
         setName("Pikachu");
         setHasEvolution(true);
         setSecondAttack(thunderpunch.pokeAttack());
-        setMainAttack("Quick Attack");
+        setMainAttack(metalclaw.pokeAttack());
         setHitPoints(HIT_POINTS);
         setDefenseMultiplier(DEFENSE_MULTIPLIER);
-        setMainAttackDamage(MAIN_ATTACK_DAMAGE);
+        setMainAttackDamage(metalclaw.Power());
         setSecondAttackDamage(thunderpunch.Power());
     }
 

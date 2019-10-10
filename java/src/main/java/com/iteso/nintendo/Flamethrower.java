@@ -17,7 +17,7 @@ public class Flamethrower implements iAttack {
      *
      * @return the power of the attack damage.
      */
-    public final int Power() {
+    public int power() {
         final int power = 15;
         return power;
     }

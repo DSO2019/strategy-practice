@@ -12,7 +12,14 @@ public class Ninetails extends PokemonCharacter {
      * Defense multiplier value between 0-1.
      */
     public static final double DEFENSE_MULTIPLIER = 0.3;
-
+     /**
+     * Damage from 1 - 20.
+     */
+    public static final int MAIN_ATTACK_DAMAGE = 15;
+    /**
+     * Damage from 1 -25.
+     */
+    public static final int SECOND_ATTACK_DAMAGE = 10;
     /**
      * Charmander constructor.
      */

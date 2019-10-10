@@ -17,7 +17,7 @@ public class Psychic implements iAttack {
      *
      * @return the power of the attack damage.
      */
-    public final int Power() {
+    public int power() {
         final int power = 20;
         return power;
     }

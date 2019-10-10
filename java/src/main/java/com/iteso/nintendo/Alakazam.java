@@ -15,11 +15,11 @@ public class Alakazam extends PokemonCharacter {
     /**
      * Damage from 1 - 20.
      */
-    public static final int MAIN_ATTACK_DAMAGE = 5;
+    public static final int MAIN_ATTACK_DAMAGE = 20;
     /**
      * Damage from 1 -25.
      */
-    public static final int SECOND_ATTACK_DAMAGE = 15;
+    public static final int SECOND_ATTACK_DAMAGE = 18;
 
     /**
      * Alakazam constructor.

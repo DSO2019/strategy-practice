@@ -17,8 +17,8 @@ public class Ember implements iAttack {
      *
      * @return the power of the attack damage.
      */
-    public final int Power() {
-        static final int Power = 10;
-        return Power;
+    public int power() {
+        final int power = 10;
+        return power;
     }
 }

@@ -9,6 +9,20 @@ import static org.junit.Assert.assertEquals;
  */
 public class PikachuTest {
     Pikachu pikachu;
+    @Before
+    public void setUp() {
+        pikachu = new Pikachu();
+    }
 
+    @Test
+    public void mainAttack() {
+        assertEquals("Pikachu dale unos latigasos,castigalo", pikachu.mainAttack());
+    }
 
+    @Test
+    public void secondAttack() {
+        assertEquals("Pikachu confundelo >.<", pikachu.secondAttack());
+    }
 }
+
+

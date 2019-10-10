@@ -6,20 +6,21 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class CharmanderTest {
-    Charmander charmander;
+public class SquirtleTest {
+    Squirtle squirtle;
     @Before
     public void setUp() {
-        charmander = new Charmander();
+        squirtle = new Squirtle();
     }
 
     @Test
     public void mainAttack() {
-        assertEquals("Charmander ataca con hoja afilada y matalo", charmander.mainAttack());
+        assertEquals("Squirtle confundelo >.<", squirtle.mainAttack());
     }
 
     @Test
     public void secondAttack() {
-        assertEquals("Charmander dale unos latigasos,castigalo", charmander.secondAttack());
+        assertEquals("Squirtle sopla! y marealo con tu horrible aliento", squirtle.secondAttack());
     }
 }
+

@@ -1,8 +1,8 @@
 package com.iteso.nintendo;
-
 /**
  * clase Lanzarrocas.
  */
+
 public class Lanzarrocas implements Ataque {
     /**
      * damagevalor.

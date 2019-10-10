@@ -6,12 +6,12 @@ public class Latigocepa implements Ataque {
     /**
      * damagevalor.
      */
-    private static final int Damgei = 20;
+    private static final int DAM = 20;
 
     /**
      * damage.
      */
-   private int damage = Damgei;
+   private int damage = DAM;
     /**
      * metodo para atacar.
      * @return mensaje.

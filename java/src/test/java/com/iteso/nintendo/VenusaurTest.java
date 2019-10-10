@@ -6,20 +6,20 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class CharmanderTest {
-    Charmander charmander;
+public class VenusaurTest {
+    Venusaur venusaur;
     @Before
     public void setUp() {
-        charmander = new Charmander();
+        venusaur = new Venusaur();
     }
 
     @Test
     public void mainAttack() {
-        assertEquals("Charmander ataca con hoja afilada y matalo", charmander.mainAttack());
+        assertEquals("Venusaur dale unos latigasos,castigalo", venusaur.mainAttack());
     }
 
     @Test
     public void secondAttack() {
-        assertEquals("Charmander dale unos latigasos,castigalo", charmander.secondAttack());
+        assertEquals("Venusaur confundelo >.<", venusaur.secondAttack());
     }
 }

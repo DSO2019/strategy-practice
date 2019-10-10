@@ -2,89 +2,89 @@ package com.iteso.nintendo;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
-    Pikachu pikachu;
+public class MewtwoTest {
+    Mewtwo mewtwo;
 
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        mewtwo = new Mewtwo();
     }
 
     /** First attack */
     @Test
     public void firstAttack(){
-        assertEquals("Attacking opponent with Thunderblot causing a damage of 24", pikachu.mainAttack());
+        assertEquals("Attacking opponent with iceBeam causing a damage of 18", mewtwo.mainAttack());
     }
 
     /** Second attack */
     @Test
     public void secondAttack(){
-        assertEquals("Attacking opponent with earthquake causing a damage of 25", pikachu.secondAttack());
+        assertEquals("Attacking opponent with earthquake causing a damage of 25", mewtwo.secondAttack());
     }
 
     /** Defense test */
     @Test
     public void defend(){
-        assertEquals("Defending attack, damage caused is 0 new HP is 100", pikachu.defend(0));
+        assertEquals("Defending attack, damage caused is 0 new HP is 100", mewtwo.defend(0));
     }
 
     /** Name test */
     @Test
     public void test_name(){
-        assertEquals("Pikachu", pikachu.getName());
+        assertEquals("Mewtwo", mewtwo.getName());
     }
 
     /** Evolve test */
     @Test
     public void test_evolve(){
-        assertEquals(null, pikachu.evolve());
+        assertEquals(null, mewtwo.evolve());
     }
 
     /** Type test */
     @Test
     public void test_type(){
-        assertEquals("electric", pikachu.getType());
+        assertEquals("psycho", mewtwo.getType());
     }
 
     /** Evolvution test */
     @Test
     public void test_evolution(){
-        assertEquals(false, pikachu.isHasEvolution());
+        assertEquals(false, mewtwo.isHasEvolution());
     }
 
     /** Main Power test */
     @Test
     public void test_getMain(){
-        assertEquals("Thunderblot", pikachu.getMainAttack());
+        assertEquals("IceBeam", mewtwo.getMainAttack());
     }
 
     /** Second Power test */
     @Test
     public void test_getSecondary(){
-        assertEquals("Earthquake", pikachu.getSecondAttack());
+        assertEquals("Earthquake", mewtwo.getSecondAttack());
     }
 
     /** Main Damage test */
     @Test
     public void test_getMainDamage(){
-        assertEquals(24, pikachu.getMainAttackDamage());
+        assertEquals(18, mewtwo.getMainAttackDamage());
     }
 
     /** Second Damage test */
     @Test
     public void test_getSecondDamage(){
-        assertEquals(25, pikachu.getSecondAttackDamage());
+        assertEquals(25, mewtwo.getSecondAttackDamage());
     }
 
     /** HP test */
     @Test
     public void test_getPoints(){
-        assertEquals(100, pikachu.getHitPoints());
+        assertEquals(100, mewtwo.getHitPoints());
     }
-
 }

@@ -2,89 +2,90 @@ package com.iteso.nintendo;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
-    Pikachu pikachu;
+public class SnorlaxTest {
+    Snorlax snorlax;
 
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        snorlax = new Snorlax();
     }
 
     /** First attack */
     @Test
     public void firstAttack(){
-        assertEquals("Attacking opponent with Thunderblot causing a damage of 24", pikachu.mainAttack());
+        assertEquals("Attacking opponent with sleep causing a damage of 0", snorlax.mainAttack());
     }
 
     /** Second attack */
     @Test
     public void secondAttack(){
-        assertEquals("Attacking opponent with earthquake causing a damage of 25", pikachu.secondAttack());
+        assertEquals("Attacking opponent with earthquake causing a damage of 25", snorlax.secondAttack());
     }
 
     /** Defense test */
     @Test
     public void defend(){
-        assertEquals("Defending attack, damage caused is 0 new HP is 100", pikachu.defend(0));
+        assertEquals("Defending attack, damage caused is 0 new HP is 77", snorlax.defend(0));
     }
 
     /** Name test */
     @Test
     public void test_name(){
-        assertEquals("Pikachu", pikachu.getName());
+        assertEquals("Snorlax", snorlax.getName());
     }
 
     /** Evolve test */
     @Test
     public void test_evolve(){
-        assertEquals(null, pikachu.evolve());
+        assertEquals(null, snorlax.evolve());
     }
 
     /** Type test */
     @Test
     public void test_type(){
-        assertEquals("electric", pikachu.getType());
+        assertEquals("normal", snorlax.getType());
     }
 
     /** Evolvution test */
     @Test
     public void test_evolution(){
-        assertEquals(false, pikachu.isHasEvolution());
+        assertEquals(false, snorlax.isHasEvolution());
     }
 
     /** Main Power test */
     @Test
     public void test_getMain(){
-        assertEquals("Thunderblot", pikachu.getMainAttack());
+        assertEquals("Sleep", snorlax.getMainAttack());
     }
 
     /** Second Power test */
     @Test
     public void test_getSecondary(){
-        assertEquals("Earthquake", pikachu.getSecondAttack());
+        assertEquals("Earthquake", snorlax.getSecondAttack());
     }
 
     /** Main Damage test */
     @Test
     public void test_getMainDamage(){
-        assertEquals(24, pikachu.getMainAttackDamage());
+        assertEquals(0, snorlax.getMainAttackDamage());
     }
 
     /** Second Damage test */
     @Test
     public void test_getSecondDamage(){
-        assertEquals(25, pikachu.getSecondAttackDamage());
+        assertEquals(25, snorlax.getSecondAttackDamage());
     }
 
     /** HP test */
     @Test
     public void test_getPoints(){
-        assertEquals(100, pikachu.getHitPoints());
+        assertEquals(100, snorlax.getHitPoints());
     }
 
 }

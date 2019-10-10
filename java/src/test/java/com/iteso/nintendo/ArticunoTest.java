@@ -2,89 +2,90 @@ package com.iteso.nintendo;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
-    Pikachu pikachu;
+public class ArticunoTest {
+    Articuno articuno;
 
     @Before
     public void setUp(){
-        pikachu = new Pikachu();
+        articuno = new Articuno();
     }
 
     /** First attack */
     @Test
     public void firstAttack(){
-        assertEquals("Attacking opponent with Thunderblot causing a damage of 24", pikachu.mainAttack());
+        assertEquals("Attacking opponent with iceBeam causing a damage of 18", articuno.mainAttack());
     }
 
     /** Second attack */
     @Test
     public void secondAttack(){
-        assertEquals("Attacking opponent with earthquake causing a damage of 25", pikachu.secondAttack());
+        assertEquals("Attacking opponent with earthquake causing a damage of 25", articuno.secondAttack());
     }
 
     /** Defense test */
     @Test
     public void defend(){
-        assertEquals("Defending attack, damage caused is 0 new HP is 100", pikachu.defend(0));
+        assertEquals("Defending attack, damage caused is 0 new HP is 77", articuno.defend(0));
     }
 
     /** Name test */
     @Test
     public void test_name(){
-        assertEquals("Pikachu", pikachu.getName());
+        assertEquals("Articuno", articuno.getName());
     }
 
     /** Evolve test */
     @Test
     public void test_evolve(){
-        assertEquals(null, pikachu.evolve());
+        assertEquals(null, articuno.evolve());
     }
 
     /** Type test */
     @Test
     public void test_type(){
-        assertEquals("electric", pikachu.getType());
+        assertEquals("ice", articuno.getType());
     }
 
     /** Evolvution test */
     @Test
     public void test_evolution(){
-        assertEquals(false, pikachu.isHasEvolution());
+        assertEquals(false, articuno.isHasEvolution());
     }
 
     /** Main Power test */
     @Test
     public void test_getMain(){
-        assertEquals("Thunderblot", pikachu.getMainAttack());
+        assertEquals("IceBeam", articuno.getMainAttack());
     }
 
     /** Second Power test */
     @Test
     public void test_getSecondary(){
-        assertEquals("Earthquake", pikachu.getSecondAttack());
+        assertEquals("Earthquake", articuno.getSecondAttack());
     }
 
     /** Main Damage test */
     @Test
     public void test_getMainDamage(){
-        assertEquals(24, pikachu.getMainAttackDamage());
+        assertEquals(18, articuno.getMainAttackDamage());
     }
 
     /** Second Damage test */
     @Test
     public void test_getSecondDamage(){
-        assertEquals(25, pikachu.getSecondAttackDamage());
+        assertEquals(25, articuno.getSecondAttackDamage());
     }
 
     /** HP test */
     @Test
     public void test_getPoints(){
-        assertEquals(100, pikachu.getHitPoints());
+        assertEquals(77, articuno.getHitPoints());
     }
 
 }

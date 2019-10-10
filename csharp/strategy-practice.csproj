@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80B63D1E-3079-487E-869D-1AB0E6741EAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>unittestpractice</RootNamespace>
+    <AssemblyName>unittest-practice</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Clases\FutureSight.cs" />
+    <Compile Include="Clases\IAttack.cs" />
+    <Compile Include="Clases\Mewtwo.cs" />
+    <Compile Include="Clases\Goldeen.cs" />
+    <Compile Include="Clases\Alakazam.cs" />
+    <Compile Include="Clases\Charmander.cs" />
+    <Compile Include="Clases\Pikachu.cs" />
+    <Compile Include="Clases\PokemonCharacter.cs" />
+    <Compile Include="Clases\Psychic.cs" />
+    <Compile Include="Clases\Scratch.cs" />
+    <Compile Include="Clases\Squirtle.cs" />
+    <Compile Include="Clases\Surf.cs" />
+    <Compile Include="Clases\WaterGun.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

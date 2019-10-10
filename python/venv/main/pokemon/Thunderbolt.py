@@ -4,7 +4,7 @@ from Attacks import *
 class Tackle(IAttack):
 
     def doAttack(self):
-        attackName = "Tackle"
+        attackName = "Thunderbolt"
         return attackName
 
     def attackDMG(self):

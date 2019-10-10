@@ -4,10 +4,10 @@ from Attacks import *
 class Tackle(IAttack):
 
     def doAttack(self):
-        attackName = "Tackle"
+        attackName = "Firepunch"
         return attackName
 
     def attackDMG(self):
-        dmg = 6
+        dmg = 8
         return dmg
 

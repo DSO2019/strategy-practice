@@ -1,5 +1,6 @@
 from Attacks import *
 
+
 #   Clase de ataque
 class Tackle(IAttack):
 

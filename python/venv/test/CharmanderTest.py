@@ -36,16 +36,16 @@ class CharmanderTests(unittest.TestCase):
         self.assertEquals("firepunch", self.charmander.getMainAttack())
 
     def test_getSecondary(self):
-        self.assertEquals("tackle", self.charmander.getSecondAttack())
+        self.assertEquals("Tackle", self.charmander.getSecondAttack())
 
     def test_getMainDamage(self):
-        self.assertEquals(20, self.charmander.getMainAttackDamage())
+        self.assertEquals(8, self.charmander.getMainAttackDamage())
 
     def test_getSecondDamage(self):
-        self.assertEquals(15, self.charmander.getSecondAttackDamage())
+        self.assertEquals(6, self.charmander.getSecondAttackDamage())
 
     def test_getMultiplier(self):
-        self.assertEquals(0.4, self.hey.getDefenseMultiplier())
+        self.assertEquals(0.4, self.charmander.getDefenseMultiplier())
 
     def test_getPoints(self):
         self.assertEquals(100, self.charmander.getHitPoints())

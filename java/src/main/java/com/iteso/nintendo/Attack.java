@@ -1,10 +1,21 @@
 package com.iteso.nintendo;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by el diablo on 2/24/18.
  */
 public interface Attack {
-    public void setAttackDamage(int attackDamage);
-    public int getAttackDamage();
-    public String attack();
+    /**
+     * @param attackDamage attack damage
+     */
+    void setAttackDamage(int attackDamage);
+
+    /**
+     * @return attack damage
+     */
+    int getAttackDamage();
+
+    /**
+     * @return attack name
+     */
+    String attack();
 }

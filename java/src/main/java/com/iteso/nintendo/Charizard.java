@@ -50,7 +50,11 @@ public class Charizard extends PokemonCharacter {
         damage = (int) (attack * getDefenseMultiplier());
         int newHP = getHitPoints() - damage;
 
-        String defendMessage = new String("Defending attack, damage caused is " + damage + " new HP is " + newHP);
+        String defendMessage = new String(
+                "Defending attack, damage caused is "
+                + damage
+                + " new HP is "
+                + newHP);
 
         setHitPoints(newHP);
         return defendMessage;
@@ -61,7 +65,10 @@ public class Charizard extends PokemonCharacter {
     public final String secondAttack() {
 
         String attackMessage = new String(
-                "Attacking opponent with " + getSecondAttack().attack() + " causing a damage of " + getSecondAttack().getAttackDamage());
+                "Attacking opponent with "
+                        + getSecondAttack().attack()
+                        + " causing a damage of "
+                        + getSecondAttack().getAttackDamage());
         return attackMessage;
 
     }
@@ -69,13 +76,18 @@ public class Charizard extends PokemonCharacter {
     @Override
     public final String mainAttack() {
         String attackMessage = new String(
-                "Attacking opponent with " + getMainAttack().attack() + " causing a damage of " + getMainAttack().getAttackDamage());
+                "Attacking opponent with "
+                        + getMainAttack().attack()
+                        + " causing a damage of "
+                        + getMainAttack().getAttackDamage());
         return attackMessage;
 
     }
 
     @Override
-    public final void setNewAttack(final int attack, final int attackDamage, final Attack newAttack) {
+    public final void setNewAttack(final int attack,
+                                   final int attackDamage,
+                                   final Attack newAttack) {
         if (attack == 1) {
             setMainAttack(newAttack);
             getMainAttack().setAttackDamage(attackDamage);

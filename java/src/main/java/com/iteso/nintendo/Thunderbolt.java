@@ -1,20 +1,32 @@
 package com.iteso.nintendo;
 
 /**
- * Created by rvillalobos on 2/24/18.
+ * Created by satanas on 2/24/18.
  */
 public class Thunderbolt implements Attack {
+    /**
+     * attack damage.
+     */
     private int attackDamage;
 
+    /**
+     * @return attack name.
+     */
     public String attack() {
         return "Thunderbolt";
     }
 
+    /**
+     * @return attack damage.
+     */
     public int getAttackDamage() {
         return attackDamage;
     }
 
-    public void setAttackDamage(int attackDamage) {
-        this.attackDamage = attackDamage;
+    /**
+     * @param damage attack damage.
+     */
+    public void setAttackDamage(final int damage) {
+        attackDamage = damage;
     }
 }

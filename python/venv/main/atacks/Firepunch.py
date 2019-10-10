@@ -1,16 +1,13 @@
-class Firepunch:
+from Attacks import *
 
-    # Constructor para ataques
-    def __init__(self,ATTACK_DMG = 8, ATTACKNAME = "Firepunch", AttDmg = none):
-        self.ATTACK_DMG = ATTACK_DMG
-        self.ATTACKNAME = ATTACKNAME
-        self.AttDmg = AttDmg
-    
+#   Clase de ataque
+class Tackle(IAttack):
+
     def doAttack(self):
-        return self.ATTACKNAME
-    
-    def getAttackDMG(self):
-        return self.AttDmg
-    
-    def setAttackDMG(self, arg):
-        self.AttDmg = arg
+        attackName = "Firepunch"
+        return attackName
+
+    def attackDMG(self):
+        dmg = 8
+        return dmg
+

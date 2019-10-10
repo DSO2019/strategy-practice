@@ -1,16 +1,13 @@
-class QuickAttack:
+from Attacks import *
 
-    # Constructor para ataques
-    def __init__(self, ATTACK_DMG=7, ATTACKNAME="QuickAttack", AttDmg=none):
-        self.ATTACK_DMG = ATTACK_DMG
-        self.ATTACKNAME = ATTACKNAME
-        self.AttDmg = AttDmg
+#   Clase de ataque
+class Tackle(IAttack):
 
     def doAttack(self):
-        return self.ATTACKNAME
+        attackName = "QuickAttack"
+        return attackName
 
-    def getAttackDMG(self):
-        return self.AttDmg
+    def attackDMG(self):
+        dmg = 7
+        return dmg
 
-    def setAttackDMG(self, arg):
-        self.AttDmg = arg

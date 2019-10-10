@@ -7,39 +7,39 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by rvillalobos on 2/24/18.
  */
-public class PikachuTest {
-    Pikachu pikachu;
+public class MewtwoTest {
+    Mewtwo mewtwo;
 
     @Before
     public void setUp() {
-        pikachu = new Pikachu();
+        mewtwo = new Mewtwo();
     }
 
     @Test
     public void testEvolve() {
-        assertEquals(pikachu.evolve(), null);
+        assertEquals(mewtwo.evolve(), null);
     }
 
     @Test
     public void testDefend() {
-        pikachu.setDefenseMultiplier(.5);
-        pikachu.setHitPoints(20);
-        pikachu.defend(5);
-        assertEquals(pikachu.getHitPoints(), 18, 0);
+        mewtwo.setDefenseMultiplier(.5);
+        mewtwo.setHitPoints(20);
+        mewtwo.defend(5);
+        assertEquals(mewtwo.getHitPoints(), 18, 0);
     }
 
     @Test
     public void testMainAttack() {
-        pikachu.setHitPoints(20);
+        mewtwo.setHitPoints(20);
         String attack = "Attacking opponent with Ataque Psychic causing a damage of 17";
-        assertEquals(attack, pikachu.mainAttack());
+        assertEquals(attack, mewtwo.mainAttack());
     }
 
     @Test
     public void testSecondAttack() {
-        pikachu.setHitPoints(20);
+        mewtwo.setHitPoints(20);
         String attack = "Attacking opponent with Ataque VoltTackle causing a damage of 23";
-        assertEquals(attack, pikachu.secondAttack());
+        assertEquals(attack, mewtwo.secondAttack());
     }
 
 }
